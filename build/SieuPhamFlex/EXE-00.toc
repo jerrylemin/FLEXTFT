@@ -71,13 +71,13 @@
    'OFFICIAL\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
    'PYSOURCE'),
   ('SieuPhamFlex', 'E:\\TFT APP OFFICIAL\\SieuPhamFlex.py', 'PYSOURCE'),
-  ('sklearn\\.libs\\msvcp140.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\.libs\\msvcp140.dll',
-   'BINARY'),
   ('sklearn\\.libs\\vcomp140.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll',
+   'BINARY'),
+  ('sklearn\\.libs\\msvcp140.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\.libs\\msvcp140.dll',
    'BINARY'),
   ('python312.dll',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python312.dll',
@@ -94,14 +94,6 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-5b1ec8b915dfb81d11cebc0788069d2d.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\bin\\libGLESv2.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libGLESv2.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\bin\\opengl32sw.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\opengl32sw.dll',
-   'BINARY'),
   ('PyQt5\\Qt5\\bin\\libEGL.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libEGL.dll',
@@ -110,9 +102,33 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+  ('PyQt5\\Qt5\\bin\\opengl32sw.dll',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\plugins\\platforms\\qoffscreen.dll',
    'E:\\TFT APP '
@@ -122,13 +138,33 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qjpeg.dll',
    'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
   ('PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\plugins\\generic\\qtuiotouchplugin.dll',
    'E:\\TFT APP '
@@ -137,42 +173,6 @@
   ('PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\plugins\\styles\\qwindowsvistastyle.dll',
    'E:\\TFT APP '
@@ -213,6 +213,14 @@
    'EXTENSION'),
   ('_queue.pyd',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md__mypyc.cp312-win_amd64.pyd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\charset_normalizer\\md__mypyc.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md.cp312-win_amd64.pyd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\charset_normalizer\\md.cp312-win_amd64.pyd',
    'EXTENSION'),
   ('numpy\\_core\\_multiarray_tests.cp312-win_amd64.pyd',
    'E:\\TFT APP '
@@ -873,6 +881,10 @@
   ('VCRUNTIME140.dll',
    'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\VCRUNTIME140.dll',
    'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'BINARY'),
   ('PyQt5\\Qt5\\bin\\MSVCP140.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140.dll',
@@ -881,33 +893,29 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
-   'BINARY'),
   ('PyQt5\\Qt5\\bin\\Qt5Core.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Core.dll',
-   'BINARY'),
-  ('PyQt5\\Qt5\\bin\\Qt5Gui.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Gui.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\bin\\Qt5Network.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Network.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+  ('PyQt5\\Qt5\\bin\\Qt5Quick.dll',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Quick.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+  ('PyQt5\\Qt5\\bin\\Qt5Gui.dll',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Gui.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Svg.dll',
    'BINARY'),
   ('PyQt5\\Qt5\\bin\\Qt5DBus.dll',
    'E:\\TFT APP '
@@ -938,13 +946,13 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
    'BINARY'),
-  ('PyQt5\\Qt5\\bin\\Qt5Qml.dll',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Qml.dll',
-   'BINARY'),
   ('PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Qml.dll',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Qml.dll',
    'BINARY'),
   ('favorite_teams.json', 'E:\\TFT APP OFFICIAL\\favorite_teams.json', 'DATA'),
   ('icons\\Akali.png', 'E:\\TFT APP OFFICIAL\\icons\\Akali.png', 'DATA'),
@@ -1075,1394 +1083,1456 @@
   ('base_library.zip',
    'E:\\TFT APP OFFICIAL\\build\\SieuPhamFlex\\base_library.zip',
    'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-dv-3.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-dv-3.json.gz',
+  ('certifi\\py.typed',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\certifi\\py.typed',
    'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\svmlight_invalid.txt',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_invalid.txt',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pyx.tp',
-   'DATA'),
-  ('sklearn\\preprocessing\\_csr_polynomial_expansion.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_csr_polynomial_expansion.pyx',
-   'DATA'),
-  ('sklearn\\utils\\_estimator_html_repr.css',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_estimator_html_repr.css',
-   'DATA'),
-  ('sklearn\\metrics\\cluster\\_expected_mutual_info_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_expected_mutual_info_fast.pyx',
-   'DATA'),
-  ('sklearn\\tree\\_utils.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdq-1119.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdq-1119.json.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_linkage.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_linkage.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_binning.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_binning.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\_gradient_boosting.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_gradient_boosting.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\neighbors\\_binary_tree.pxi.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_binary_tree.pxi.tp',
-   'DATA'),
-  ('sklearn\\__check_build\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\meson.build',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\meson.build',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\linnerud.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\linnerud.rst',
-   'DATA'),
-  ('sklearn\\linear_model\\_sag_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sag_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\linear_model\\_cd_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_cd_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\feature_extraction\\_hashing_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\_hashing_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\_loss\\_loss.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.pyx.tp',
-   'DATA'),
-  ('sklearn\\utils\\murmurhash.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdf-61.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdf-61.json.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_minibatch.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_minibatch.pyx',
-   'DATA'),
-  ('sklearn\\tree\\_utils.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\splitting.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\splitting.pyx',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\libsvm_template.cpp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_template.cpp',
-   'DATA'),
-  ('sklearn\\svm\\_libsvm.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.pyx',
-   'DATA'),
-  ('sklearn\\utils\\_fast_dict.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\species_distributions.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\species_distributions.rst',
-   'DATA'),
-  ('sklearn\\utils\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\meson.build',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\data-v1-dl-49822.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\data-v1-dl-49822.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\data-v1-dl-1595261.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\data-v1-dl-1595261.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\data\\diabetes_target.csv.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\diabetes_target.csv.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\svmlight_invalid_order.txt',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_invalid_order.txt',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdq-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdq-1.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\data\\linnerud_exercise.csv',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\linnerud_exercise.csv',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jd-1590.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jd-1590.json.gz',
-   'DATA'),
-  ('sklearn\\decomposition\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\meson.build',
-   'DATA'),
-  ('sklearn\\_isotonic.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_isotonic.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\cluster\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\meson.build',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_common.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.pxd',
-   'DATA'),
-  ('sklearn\\utils\\murmurhash.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.pxd',
+  ('certifi\\cacert.pem',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\certifi\\cacert.pem',
    'DATA'),
   ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.pyx.tp',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.pyx.tp',
    'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\src\\newrand\\newrand.h',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\newrand\\newrand.h',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jd-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jd-1.json.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_common.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\data-v1-dl-1666876.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\data-v1-dl-1666876.arff.gz',
-   'DATA'),
-  ('sklearn\\_isotonic.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_isotonic.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\meson.build',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\meson.build',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_linkage.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_linkage.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\neighbors\\_quad_tree.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-40981.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-40981.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\tron.h',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\tron.h',
-   'DATA'),
-  ('sklearn\\datasets\\data\\breast_cancer.csv',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\breast_cancer.csv',
-   'DATA'),
-  ('sklearn\\datasets\\_svmlight_format_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\_svmlight_format_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\california_housing.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\california_housing.rst',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pyx.tp',
-   'DATA'),
-  ('sklearn\\externals\\README',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\externals\\README',
-   'DATA'),
-  ('sklearn\\__check_build\\_check_build.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\_check_build.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\images\\README.txt',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\README.txt',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdq-42074.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdq-42074.json.gz',
-   'DATA'),
   ('sklearn\\cluster\\_hdbscan\\meson.build',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\meson.build',
-   'DATA'),
-  ('sklearn\\manifold\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\meson.build',
-   'DATA'),
-  ('sklearn\\_loss\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\meson.build',
-   'DATA'),
-  ('sklearn\\utils\\_sorting.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.pxd',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pxd.tp',
-   'DATA'),
-  ('sklearn\\utils\\_weight_vector.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.pyx.tp',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\tree\\meson.build',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\meson.build',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdf-1119.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdf-1119.json.gz',
-   'DATA'),
-  ('sklearn\\utils\\_vector_sentinel.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jd-40945.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jd-40945.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\_liblinear.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\linear.h',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\linear.h',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\breast_cancer.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\breast_cancer.rst',
-   'DATA'),
-  ('sklearn\\utils\\_seq_dataset.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.pxd.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-40981.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-40981.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdf-42074.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdf-42074.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdf-561.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdf-561.json.gz',
-   'DATA'),
-  ('sklearn\\utils\\_weight_vector.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.pyx.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdf-1590.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdf-1590.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\libsvm_sparse_helper.c',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_sparse_helper.c',
-   'DATA'),
-  ('sklearn\\datasets\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\meson.build',
-   'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\linear.cpp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\linear.cpp',
-   'DATA'),
-  ('sklearn\\linear_model\\_sgd_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jd-3.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jd-3.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\digits.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\digits.rst',
-   'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\COPYRIGHT',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\COPYRIGHT',
-   'DATA'),
-  ('sklearn\\datasets\\data\\digits.csv.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\digits.csv.gz',
-   'DATA'),
-  ('sklearn\\utils\\_vector_sentinel.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.pyx',
-   'DATA'),
-  ('sklearn\\utils\\src\\MurmurHash3.cpp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\src\\MurmurHash3.cpp',
-   'DATA'),
-  ('sklearn\\_loss\\_loss.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_dist_metrics.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.pxd.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\tree\\_splitter.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_splitter.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdq-40589.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdq-40589.json.gz',
-   'DATA'),
-  ('sklearn\\utils\\_heap.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_elkan.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_elkan.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\cluster\\_dbscan_inner.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_dbscan_inner.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_hierarchical_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\utils\\_seq_dataset.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.pyx.tp',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pxd',
-   'DATA'),
-  ('sklearn\\utils\\sparsefuncs_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\linear_model\\_cd_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_cd_fast.pyx',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\svm.h',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\svm.h',
-   'DATA'),
-  ('sklearn\\tree\\_tree.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\data-v1-dl-61.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\data-v1-dl-61.arff.gz',
-   'DATA'),
-  ('sklearn\\utils\\_weight_vector.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.pxd.tp',
-   'DATA'),
-  ('sklearn\\metrics\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\meson.build',
-   'DATA'),
-  ('sklearn\\linear_model\\_sgd_fast.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.pyx.tp',
-   'DATA'),
-  ('sklearn\\neighbors\\_kd_tree.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_kd_tree.pyx.tp',
-   'DATA'),
-  ('sklearn\\utils\\_typedefs.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.pxd',
-   'DATA'),
-  ('sklearn\\tree\\_tree.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdq-40675.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdq-40675.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\_libsvm_sparse.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm_sparse.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_binning.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_binning.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jd-62.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jd-62.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\images\\flower.jpg',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\flower.jpg',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\data-v1-dl-54002.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\data-v1-dl-54002.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdq-61.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdq-61.json.gz',
-   'DATA'),
-  ('sklearn\\decomposition\\_online_lda_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_online_lda_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdf-2.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdf-2.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\svm.cpp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\svm.cpp',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_tree.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.pxd',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdf-3.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdf-3.json.gz',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\olivetti_faces.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\olivetti_faces.rst',
-   'DATA'),
-  ('sklearn\\svm\\_newrand.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_newrand.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdq-2.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdq-2.json.gz',
-   'DATA'),
-  ('sklearn\\__check_build\\_check_build.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\_check_build.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_reachability.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_reachability.pyx',
-   'DATA'),
-  ('sklearn\\_loss\\_loss.pxd',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.pxd',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jd-40589.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jd-40589.json.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_lloyd.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_lloyd.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\cluster\\_dbscan_inner.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_dbscan_inner.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\kddcup99.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\kddcup99.rst',
-   'DATA'),
-  ('sklearn\\metrics\\cluster\\_expected_mutual_info_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_expected_mutual_info_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\utils\\_typedefs.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdf-62.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdf-62.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\_newrand.pyx',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_newrand.pyx',
-   'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\tron.cpp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\tron.cpp',
-   'DATA'),
-  ('sklearn\\utils\\_typedefs.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_lloyd.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_lloyd.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdq-62.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdq-62.json.gz',
-   'DATA'),
-  ('sklearn\\neighbors\\_partition_nodes.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\histogram.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\histogram.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-292.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-292.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\tree\\_utils.pxd',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jd-2.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jd-2.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\svmlight_classification.txt',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_classification.txt',
-   'DATA'),
-  ('sklearn\\datasets\\data\\diabetes_data_raw.csv.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\diabetes_data_raw.csv.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1-s-dact.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1-s-dact.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdf-42585.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdf-42585.json.gz',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\histogram.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\histogram.pyx',
-   'DATA'),
-  ('sklearn\\utils\\_sorting.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\data-v1-dl-16826755.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\data-v1-dl-16826755.arff.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_tree.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pxd.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdq-40945.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdq-40945.json.gz',
-   'DATA'),
-  ('sklearn\\linear_model\\_sag_fast.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sag_fast.pyx.tp',
-   'DATA'),
-  ('sklearn\\manifold\\_utils.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_utils.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-dv-4.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-dv-4.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdq-561.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdq-561.json.gz',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_classmode.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_classmode.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\twenty_newsgroups.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\twenty_newsgroups.rst',
-   'DATA'),
-  ('sklearn\\utils\\_random.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\data\\iris.csv',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\iris.csv',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\data-v1-dl-1.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\data-v1-dl-1.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jd-61.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jd-61.json.gz',
-   'DATA'),
-  ('sklearn\\utils\\sparsefuncs_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs_fast.pyx',
-   'DATA'),
-  ('sklearn\\feature_extraction\\_hashing_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\_hashing_fast.pyx',
-   'DATA'),
-  ('sklearn\\preprocessing\\_target_encoder_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\utils\\_seq_dataset.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\tree\\_criterion.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\rcv1.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\rcv1.rst',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\data-v1-dl-21552912.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\data-v1-dl-21552912.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\iris.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\iris.rst',
-   'DATA'),
-  ('sklearn\\utils\\_openmp_helpers.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.pyx.tp',
-   'DATA'),
-  ('sklearn\\utils\\_random.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.cp312-win_amd64.lib',
    'DATA'),
   ('sklearn\\metrics\\_dist_metrics.pxd',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.pxd',
    'DATA'),
-  ('sklearn\\utils\\murmurhash.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\utils\\_vector_sentinel.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.pxd',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\neighbors\\_partition_nodes.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\data-v1-dl-3.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\data-v1-dl-3.arff.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_elkan.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_elkan.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\data\\linnerud_physiological.csv',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\linnerud_physiological.csv',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\lfw.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\lfw.rst',
-   'DATA'),
-  ('sklearn\\svm\\_liblinear.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_common.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\libsvm_helper.c',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_helper.c',
-   'DATA'),
-  ('sklearn\\svm\\src\\libsvm\\LIBSVM_CHANGES',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\LIBSVM_CHANGES',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\data-v1-dl-4965250.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\data-v1-dl-4965250.arff.gz',
-   'DATA'),
-  ('sklearn\\linear_model\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\meson.build',
-   'DATA'),
-  ('sklearn\\metrics\\_dist_metrics.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.pyx.tp',
-   'DATA'),
-  ('sklearn\\cluster\\_hierarchical_fast.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_fast.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\cluster\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\meson.build',
-   'DATA'),
   ('sklearn\\tree\\_splitter.cp312-win_amd64.lib',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_splitter.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jd-40675.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jd-40675.json.gz',
-   'DATA'),
-  ('sklearn\\neighbors\\_kd_tree.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_kd_tree.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\neighbors\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\meson.build',
-   'DATA'),
-  ('sklearn\\utils\\_openmp_helpers.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_hdbscan\\_tree.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.pxd',
-   'DATA'),
-  ('sklearn\\utils\\_cython_blas.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.pxd',
-   'DATA'),
-  ('sklearn\\utils\\_cython_blas.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx.tp',
-   'DATA'),
-  ('sklearn\\utils\\_fast_dict.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdf-40675.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdf-40675.json.gz',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\splitting.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\splitting.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\data-v1-dl-17928620.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\data-v1-dl-17928620.arff.gz',
-   'DATA'),
-  ('sklearn\\tree\\_tree.pxd',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.pxd',
-   'DATA'),
-  ('sklearn\\manifold\\_utils.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_utils.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-s-act-.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-s-act-.json.gz',
-   'DATA'),
-  ('sklearn\\feature_extraction\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\meson.build',
-   'DATA'),
-  ('sklearn\\preprocessing\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\meson.build',
-   'DATA'),
-  ('sklearn\\decomposition\\_online_lda_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_online_lda_fast.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1-s-dact.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1-s-dact.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\images\\china.jpg',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\china.jpg',
-   'DATA'),
-  ('sklearn\\manifold\\_barnes_hut_tsne.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_barnes_hut_tsne.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\decomposition\\_cdnmf_fast.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_cdnmf_fast.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pxd.tp',
-   'DATA'),
-  ('sklearn\\neighbors\\_partition_nodes.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jd-42585.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jd-42585.json.gz',
-   'DATA'),
-  ('sklearn\\svm\\_liblinear.pxi',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.pxi',
-   'DATA'),
-  ('sklearn\\decomposition\\_cdnmf_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_cdnmf_fast.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\data\\wine_data.csv',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\wine_data.csv',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdq-40966.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdq-40966.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\wine_data.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\wine_data.rst',
-   'DATA'),
-  ('sklearn\\utils\\_random.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.pxd',
-   'DATA'),
-  ('sklearn\\manifold\\_barnes_hut_tsne.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_barnes_hut_tsne.pyx',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\svm\\_libsvm.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\diabetes.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\diabetes.rst',
-   'DATA'),
-  ('sklearn\\utils\\_sorting.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\descr\\covtype.rst',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\covtype.rst',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\_dist_metrics.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pyx.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\svmlight_multilabel.txt',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_multilabel.txt',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdq-1590.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdq-1590.json.gz',
-   'DATA'),
-  ('sklearn\\cluster\\_hierarchical_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.pyx',
-   'DATA'),
-  ('sklearn\\linear_model\\_sgd_fast.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\data-v1-dl-52739.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\data-v1-dl-52739.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\data-v1-dl-52352.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\data-v1-dl-52352.arff.gz',
-   'DATA'),
-  ('sklearn\\datasets\\_svmlight_format_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\_svmlight_format_fast.pyx',
-   'DATA'),
-  ('sklearn\\tree\\_criterion.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.pxd',
-   'DATA'),
-  ('sklearn\\svm\\_libsvm.pxi',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.pxi',
-   'DATA'),
-  ('sklearn\\svm\\_libsvm_sparse.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm_sparse.pyx',
    'DATA'),
   ('sklearn\\svm\\src\\libsvm\\_svm_cython_blas_helpers.h',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\_svm_cython_blas_helpers.h',
    'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\_cython_blas_helpers.h',
+  ('sklearn\\linear_model\\_sag_fast.pyx.tp',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\_cython_blas_helpers.h',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sag_fast.pyx.tp',
    'DATA'),
-  ('sklearn\\utils\\arrayfuncs.cp312-win_amd64.lib',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jd-1.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\arrayfuncs.cp312-win_amd64.lib',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jd-1.json.gz',
    'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-s-act-.json.gz',
+  ('sklearn\\utils\\_cython_blas.pyx',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-s-act-.json.gz',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.pyx',
    'DATA'),
-  ('sklearn\\utils\\_isfinite.cp312-win_amd64.lib',
+  ('sklearn\\datasets\\tests\\data\\svmlight_invalid.txt',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_isfinite.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\neighbors\\_quad_tree.pxd',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.pxd',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-292.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-292.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdf-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdf-1.json.gz',
-   'DATA'),
-  ('sklearn\\neighbors\\_ball_tree.pyx.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_ball_tree.pyx.tp',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jd-42074.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jd-42074.json.gz',
-   'DATA'),
-  ('sklearn\\preprocessing\\_target_encoder_fast.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder_fast.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.pyx',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.pxd.tp',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.pxd.tp',
-   'DATA'),
-  ('sklearn\\utils\\arrayfuncs.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\arrayfuncs.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jd-1119.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jd-1119.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdq-3.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdq-3.json.gz',
-   'DATA'),
-  ('sklearn\\neighbors\\_quad_tree.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.pyx',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-dv-1.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-dv-1.json.gz',
-   'DATA'),
-  ('sklearn\\ensemble\\_gradient_boosting.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_gradient_boosting.pyx',
-   'DATA'),
-  ('sklearn\\neighbors\\_ball_tree.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_ball_tree.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\preprocessing\\_csr_polynomial_expansion.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_csr_polynomial_expansion.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdf-40589.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdf-40589.json.gz',
-   'DATA'),
-  ('sklearn\\ensemble\\_hist_gradient_boosting\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\meson.build',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\data-v1-dl-4644182.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\data-v1-dl-4644182.arff.gz',
-   'DATA'),
-  ('sklearn\\utils\\src\\MurmurHash3.h',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\src\\MurmurHash3.h',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdq-42585.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdq-42585.json.gz',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jd-561.json.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jd-561.json.gz',
-   'DATA'),
-  ('sklearn\\utils\\_isfinite.pyx',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_isfinite.pyx',
-   'DATA'),
-  ('sklearn\\utils\\_fast_dict.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\data-v1-dl-21854866.arff.gz',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\data-v1-dl-21854866.arff.gz',
-   'DATA'),
-  ('sklearn\\utils\\_cython_blas.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\utils\\_heap.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.cp312-win_amd64.lib',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_invalid.txt',
    'DATA'),
   ('sklearn\\utils\\_openmp_helpers.pxd',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.pxd',
    'DATA'),
-  ('sklearn\\datasets\\data\\boston_house_prices.csv',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdf-61.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\boston_house_prices.csv',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdf-61.json.gz',
    'DATA'),
-  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-s-act-.json.gz',
+  ('sklearn\\svm\\_newrand.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-s-act-.json.gz',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_newrand.cp312-win_amd64.lib',
    'DATA'),
-  ('sklearn\\svm\\src\\liblinear\\liblinear_helper.c',
+  ('sklearn\\metrics\\_dist_metrics.pxd.tp',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\liblinear_helper.c',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.pxd.tp',
    'DATA'),
-  ('sklearn\\tree\\_splitter.pxd',
+  ('sklearn\\utils\\_sorting.pxd',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_splitter.pxd',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.pxd',
    'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pxd.tp',
+  ('sklearn\\preprocessing\\_target_encoder_fast.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pxd.tp',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder_fast.cp312-win_amd64.lib',
    'DATA'),
-  ('sklearn\\tree\\_criterion.pyx',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-s-act-.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.pyx',
-   'DATA'),
-  ('sklearn\\cluster\\_k_means_minibatch.cp312-win_amd64.lib',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_minibatch.cp312-win_amd64.lib',
-   'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\meson.build',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\meson.build',
-   'DATA'),
-  ('sklearn\\svm\\meson.build',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\meson.build',
-   'DATA'),
-  ('sklearn\\utils\\_heap.pxd',
-   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.pxd',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-s-act-.json.gz',
    'DATA'),
   ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdf-40945.json.gz',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdf-40945.json.gz',
    'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jd-42585.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jd-42585.json.gz',
+   'DATA'),
+  ('sklearn\\tree\\_utils.pxd',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.pxd',
+   'DATA'),
+  ('sklearn\\neighbors\\_ball_tree.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_ball_tree.pyx.tp',
+   'DATA'),
+  ('sklearn\\tree\\_utils.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.pyx',
+   'DATA'),
   ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdf-40966.json.gz',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdf-40966.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\data\\diabetes_data_raw.csv.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\diabetes_data_raw.csv.gz',
+   'DATA'),
+  ('sklearn\\manifold\\_utils.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_utils.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\data\\linnerud_exercise.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\linnerud_exercise.csv',
+   'DATA'),
+  ('sklearn\\feature_extraction\\_hashing_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\_hashing_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_lloyd.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_lloyd.pyx',
+   'DATA'),
+  ('sklearn\\ensemble\\_gradient_boosting.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_gradient_boosting.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\twenty_newsgroups.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\twenty_newsgroups.rst',
+   'DATA'),
+  ('sklearn\\decomposition\\_online_lda_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_online_lda_fast.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\breast_cancer.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\breast_cancer.rst',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\linear.cpp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\linear.cpp',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pxd.tp',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pyx.tp',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pxd.tp',
+   'DATA'),
+  ('sklearn\\tree\\_utils.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_utils.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\decomposition\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\meson.build',
+   'DATA'),
+  ('sklearn\\utils\\_heap.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pxd.tp',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.pxd.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdf-62.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdf-62.json.gz',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdq-561.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdq-561.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\_cython_blas.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.pxd',
+   'DATA'),
+  ('sklearn\\utils\\_vector_sentinel.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\svmlight_classification.txt',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_classification.txt',
+   'DATA'),
+  ('sklearn\\utils\\_estimator_html_repr.css',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_estimator_html_repr.css',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdq-2.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdq-2.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\_sorting.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.pyx',
+   'DATA'),
+  ('sklearn\\utils\\_fast_dict.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.pyx',
+   'DATA'),
+  ('sklearn\\metrics\\cluster\\_expected_mutual_info_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_expected_mutual_info_fast.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\images\\flower.jpg',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\flower.jpg',
+   'DATA'),
+  ('sklearn\\cluster\\_hierarchical_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\wine_data.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\wine_data.rst',
+   'DATA'),
+  ('sklearn\\cluster\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\meson.build',
+   'DATA'),
+  ('sklearn\\svm\\src\\newrand\\newrand.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\newrand\\newrand.h',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_elkan.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_elkan.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_minibatch.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_minibatch.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\data\\linnerud_physiological.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\linnerud_physiological.csv',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_dist_metrics.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.pyx.tp',
    'DATA'),
   ('sklearn\\cluster\\_hdbscan\\_reachability.cp312-win_amd64.lib',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_reachability.cp312-win_amd64.lib',
    'DATA'),
-  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.cp312-win_amd64.lib',
+  ('sklearn\\svm\\_libsvm.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.pyx',
+   'DATA'),
+  ('sklearn\\neighbors\\_quad_tree.pxd',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.cp312-win_amd64.lib',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.pxd',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\_vector_sentinel.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdf-42074.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdf-42074.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\cluster\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\meson.build',
+   'DATA'),
+  ('sklearn\\cluster\\_dbscan_inner.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_dbscan_inner.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\src\\MurmurHash3.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\src\\MurmurHash3.h',
+   'DATA'),
+  ('sklearn\\svm\\meson.build',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\meson.build',
+   'DATA'),
+  ('sklearn\\utils\\_random.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\data-v1-dl-4965250.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\data-v1-dl-4965250.arff.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdf-40589.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdf-40589.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jd-40945.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jd-40945.json.gz',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\meson.build',
+   'DATA'),
+  ('sklearn\\tree\\_splitter.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_splitter.pxd',
+   'DATA'),
+  ('sklearn\\feature_extraction\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\meson.build',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\california_housing.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\california_housing.rst',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdq-42585.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdq-42585.json.gz',
    'DATA'),
   ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jd-40966.json.gz',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jd-40966.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+  ('sklearn\\utils\\arrayfuncs.pyx',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\arrayfuncs.pyx',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\data-v1-dl-61.arff.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\data-v1-dl-61.arff.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_he.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\data-v1-dl-1.arff.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_he.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\data-v1-dl-1.arff.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+  ('sklearn\\__check_build\\meson.build',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\meson.build',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_es.qm',
+  ('sklearn\\svm\\src\\libsvm\\svm.cpp',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_es.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\svm.cpp',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+  ('sklearn\\metrics\\cluster\\_expected_mutual_info_fast.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_expected_mutual_info_fast.cp312-win_amd64.lib',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_pt.qm',
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_binning.pyx',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_binning.pyx',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdf-1119.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdf-1119.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_fi.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1-s-dact.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-dv-1-s-dact.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_tr.qm',
+  ('sklearn\\utils\\_typedefs.pxd',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.pxd',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_pl.qm',
+  ('sklearn\\cluster\\_hdbscan\\_tree.pxd',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.pxd',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+  ('sklearn\\cluster\\_hierarchical_fast.pxd',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.pxd',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_hu.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-s-act-.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-s-act-.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_es.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdf-40675.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdf-40675.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_gd.qm',
+  ('sklearn\\datasets\\descr\\iris.rst',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\iris.rst',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_uk.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_uk.qm',
+  ('sklearn\\utils\\_heap.pxd',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.pxd',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+  ('sklearn\\linear_model\\_cd_fast.pyx',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_cd_fast.pyx',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_da.qm',
+  ('sklearn\\_loss\\_loss.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.lib',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+  ('sklearn\\cluster\\_hdbscan\\_reachability.pyx',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_reachability.pyx',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+  ('sklearn\\utils\\_openmp_helpers.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.cp312-win_amd64.lib',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jd-40589.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jd-40589.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+  ('sklearn\\cluster\\_hdbscan\\_tree.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.cp312-win_amd64.lib',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-s-act-.json.gz',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdl-dn-cpu-l-2-s-act-.json.gz',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\splitting.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\splitting.cp312-win_amd64.lib',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+  ('sklearn\\utils\\_heap.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_heap.pyx',
+   'DATA'),
+  ('sklearn\\utils\\_random.cp312-win_amd64.lib',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\_fast_dict.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.pyx',
+   'DATA'),
+  ('sklearn\\utils\\src\\MurmurHash3.cpp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\src\\MurmurHash3.cpp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdq-40589.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdq-40589.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\src\\libsvm\\libsvm_sparse_helper.c',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_sparse_helper.c',
+   'DATA'),
+  ('sklearn\\_loss\\_loss.pxd',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jd-61.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jd-61.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-s-act-.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-s-act-.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\_newrand.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_newrand.pyx',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.pyx',
+   'DATA'),
+  ('sklearn\\utils\\_weight_vector.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.pxd.tp',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\digits.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\digits.rst',
+   'DATA'),
+  ('sklearn\\utils\\_typedefs.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1-s-dact.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1-s-dact.json.gz',
+   'DATA'),
+  ('sklearn\\linear_model\\_sgd_fast.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\data-v1-dl-54002.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\data-v1-dl-54002.arff.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdf-2.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdf-2.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\_sorting.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_sorting.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\svmlight_multilabel.txt',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_multilabel.txt',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\common.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\common.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-s-act-.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-s-act-.json.gz',
+   'DATA'),
+  ('sklearn\\decomposition\\_cdnmf_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_cdnmf_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\_openmp_helpers.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_openmp_helpers.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdl-dn-glass2-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors_classmode.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\data-v1-dl-21552912.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\data-v1-dl-21552912.arff.gz',
+   'DATA'),
+  ('sklearn\\datasets\\data\\diabetes_target.csv.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\diabetes_target.csv.gz',
+   'DATA'),
+  ('sklearn\\utils\\_fast_dict.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_fast_dict.pxd',
+   'DATA'),
+  ('sklearn\\utils\\sparsefuncs_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs_fast.pyx',
+   'DATA'),
+  ('sklearn\\tree\\_criterion.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\tree\\_tree.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\data-v1-dl-52739.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\data-v1-dl-52739.arff.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_hdbscan\\_linkage.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_linkage.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\_isotonic.pyx',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_isotonic.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdq-1590.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdq-1590.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\species_distributions.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\species_distributions.rst',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jd-1590.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jd-1590.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\data-v1-dl-49822.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\data-v1-dl-49822.arff.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-dv-4.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdl-dn-miceprotein-l-2-dv-4.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx.tp',
+   'DATA'),
+  ('sklearn\\linear_model\\_cd_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_cd_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdf-3.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdf-3.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\murmurhash.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.pyx',
+   'DATA'),
+  ('sklearn\\tree\\_splitter.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_splitter.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-s-act-.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jdl-dn-anneal-l-2-s-act-.json.gz',
+   'DATA'),
+  ('sklearn\\externals\\README',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\externals\\README',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\olivetti_faces.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\olivetti_faces.rst',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdq-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdq-1.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\sparsefuncs_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\data-v1-dl-1595261.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\data-v1-dl-1595261.arff.gz',
+   'DATA'),
+  ('sklearn\\__check_build\\_check_build.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\_check_build.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\lfw.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\lfw.rst',
+   'DATA'),
+  ('sklearn\\svm\\_libsvm_sparse.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm_sparse.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\_loss\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\meson.build',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\data-v1-dl-1666876.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\data-v1-dl-1666876.arff.gz',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\_cython_blas_helpers.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\_cython_blas_helpers.h',
+   'DATA'),
+  ('sklearn\\utils\\_seq_dataset.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdq-40945.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\api-v1-jdq-40945.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jd-40675.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jd-40675.json.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_hierarchical_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hierarchical_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\tree\\_criterion.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.pyx',
+   'DATA'),
+  ('sklearn\\utils\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\meson.build',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\tron.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\tron.h',
+   'DATA'),
+  ('sklearn\\datasets\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\meson.build',
+   'DATA'),
+  ('sklearn\\utils\\_cython_blas.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_cython_blas.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\decomposition\\_cdnmf_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_cdnmf_fast.pyx',
+   'DATA'),
+  ('sklearn\\linear_model\\_sag_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sag_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\svm\\src\\libsvm\\libsvm_template.cpp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_template.cpp',
+   'DATA'),
+  ('sklearn\\datasets\\data\\digits.csv.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\digits.csv.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_fast.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jd-42074.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jd-42074.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.pyx.tp',
+   'DATA'),
+  ('sklearn\\utils\\_seq_dataset.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_datasets_pair.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\svm\\src\\libsvm\\libsvm_helper.c',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\libsvm_helper.c',
+   'DATA'),
+  ('sklearn\\_loss\\_loss.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_loss\\_loss.pyx.tp',
+   'DATA'),
+  ('sklearn\\ensemble\\_gradient_boosting.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_gradient_boosting.pyx',
+   'DATA'),
+  ('sklearn\\meson.build',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\meson.build',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_binning.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_binning.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdf-42585.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\api-v1-jdf-42585.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\_liblinear.pxi',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.pxi',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40945\\data-v1-dl-16826755.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40945\\data-v1-dl-16826755.arff.gz',
+   'DATA'),
+  ('sklearn\\utils\\murmurhash.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\data-v1-dl-4644182.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\data-v1-dl-4644182.arff.gz',
+   'DATA'),
+  ('sklearn\\neighbors\\_ball_tree.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_ball_tree.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\meson.build',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\histogram.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\histogram.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\manifold\\_utils.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_utils.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\preprocessing\\_target_encoder_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder_fast.pyx',
+   'DATA'),
+  ('sklearn\\neighbors\\_partition_nodes.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42585\\data-v1-dl-21854866.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42585\\data-v1-dl-21854866.arff.gz',
+   'DATA'),
+  ('sklearn\\neighbors\\_binary_tree.pxi.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_binary_tree.pxi.tp',
+   'DATA'),
+  ('sklearn\\utils\\_typedefs.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_typedefs.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\svm\\_liblinear.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\tree\\_tree.pxd',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.pxd',
+   'DATA'),
+  ('sklearn\\feature_extraction\\_hashing_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\feature_extraction\\_hashing_fast.pyx',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\splitting.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\splitting.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-40981.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-40981.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\meson.build',
+   'DATA'),
+  ('sklearn\\datasets\\data\\breast_cancer.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\breast_cancer.csv',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_middle_term_computer.pxd.tp',
+   'DATA'),
+  ('sklearn\\svm\\src\\libsvm\\LIBSVM_CHANGES',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\LIBSVM_CHANGES',
+   'DATA'),
+  ('sklearn\\utils\\_random.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_random.pyx',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin_classmode.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\__check_build\\_check_build.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\__check_build\\_check_build.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\_isfinite.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_isfinite.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdf-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1\\api-v1-jdf-1.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\_libsvm.pxi',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.pxi',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_minibatch.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_minibatch.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\svm\\_libsvm.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\tree\\_tree.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_tree.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\neighbors\\_kd_tree.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_kd_tree.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\data\\boston_house_prices.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\boston_house_prices.csv',
+   'DATA'),
+  ('sklearn\\linear_model\\_sgd_fast.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jd-62.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jd-62.json.gz',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_classmode.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_classmode.pxd',
+   'DATA'),
+  ('sklearn\\metrics\\_dist_metrics.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_dist_metrics.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\neighbors\\_partition_nodes.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.pyx',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_radius_neighbors.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-40981.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-40981.json.gz',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_bitset.pxd',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_gradient_boosting.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_common.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdf-561.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jdf-561.json.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_hdbscan\\_linkage.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_linkage.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdq-3.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jdq-3.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\src\\libsvm\\svm.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\libsvm\\svm.h',
+   'DATA'),
+  ('sklearn\\utils\\_weight_vector.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdq-40966.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\api-v1-jdq-40966.json.gz',
+   'DATA'),
+  ('sklearn\\neighbors\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\meson.build',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\diabetes.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\diabetes.rst',
+   'DATA'),
+  ('sklearn\\preprocessing\\_csr_polynomial_expansion.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_csr_polynomial_expansion.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdq-61.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdq-61.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdq-40675.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40675\\api-v1-jdq-40675.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\arrayfuncs.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\arrayfuncs.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\_isotonic.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\_isotonic.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\utils\\_vector_sentinel.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_vector_sentinel.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\data-v1-dl-52352.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\data-v1-dl-52352.arff.gz',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\kddcup99.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\kddcup99.rst',
+   'DATA'),
+  ('sklearn\\manifold\\_barnes_hut_tsne.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_barnes_hut_tsne.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jd-561.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_561\\api-v1-jd-561.json.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_common.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\linear.h',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\linear.h',
+   'DATA'),
+  ('sklearn\\manifold\\_barnes_hut_tsne.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\_barnes_hut_tsne.pyx',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\linnerud.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\linnerud.rst',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jd-3.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\api-v1-jd-3.json.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_dbscan_inner.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_dbscan_inner.pyx',
+   'DATA'),
+  ('sklearn\\preprocessing\\_csr_polynomial_expansion.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\_csr_polynomial_expansion.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\_svmlight_format_fast.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\_svmlight_format_fast.pyx',
+   'DATA'),
+  ('sklearn\\utils\\murmurhash.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\murmurhash.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdq-62.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_62\\api-v1-jdq-62.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\data\\wine_data.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\wine_data.csv',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdq-42074.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_42074\\api-v1-jdq-42074.json.gz',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_elkan.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_elkan.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40966\\data-v1-dl-17928620.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40966\\data-v1-dl-17928620.arff.gz',
+   'DATA'),
+  ('sklearn\\decomposition\\_online_lda_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\decomposition\\_online_lda_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\manifold\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\manifold\\meson.build',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\covtype.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\covtype.rst',
+   'DATA'),
+  ('sklearn\\neighbors\\_partition_nodes.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_partition_nodes.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdf-1590.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1590\\api-v1-jdf-1590.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-dv-3.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_40589\\api-v1-jdl-dn-emotions-l-2-dv-3.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\_weight_vector.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_weight_vector.pyx.tp',
+   'DATA'),
+  ('sklearn\\neighbors\\_kd_tree.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_kd_tree.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\images\\README.txt',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\README.txt',
+   'DATA'),
+  ('sklearn\\ensemble\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\meson.build',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\_predictor.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-s-act-.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdl-dn-australian-l-2-s-act-.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\images\\china.jpg',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\images\\china.jpg',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-292.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jdf-292.json.gz',
+   'DATA'),
+  ('sklearn\\neighbors\\_quad_tree.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.pyx',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\tron.cpp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\tron.cpp',
+   'DATA'),
+  ('sklearn\\tree\\meson.build',
+   'E:\\TFT APP OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\meson.build',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\COPYRIGHT',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\COPYRIGHT',
+   'DATA'),
+  ('sklearn\\linear_model\\_sgd_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\_sgd_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\svmlight_invalid_order.txt',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\svmlight_invalid_order.txt',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_common.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_common.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jd-1119.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jd-1119.json.gz',
+   'DATA'),
+  ('sklearn\\preprocessing\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\preprocessing\\meson.build',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-s-act-.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdl-dn-adult-census-l-2-s-act-.json.gz',
+   'DATA'),
+  ('sklearn\\linear_model\\meson.build',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\linear_model\\meson.build',
+   'DATA'),
+  ('sklearn\\cluster\\_hdbscan\\_tree.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\_tree.pyx',
+   'DATA'),
+  ('sklearn\\datasets\\descr\\rcv1.rst',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\descr\\rcv1.rst',
+   'DATA'),
+  ('sklearn\\svm\\_libsvm_sparse.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_libsvm_sparse.pyx',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_3\\data-v1-dl-3.arff.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_3\\data-v1-dl-3.arff.gz',
+   'DATA'),
+  ('sklearn\\svm\\_liblinear.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\_liblinear.pyx',
+   'DATA'),
+  ('sklearn\\neighbors\\_quad_tree.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\neighbors\\_quad_tree.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\metrics\\_pairwise_distances_reduction\\_base.pyx.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_base.pyx.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdq-1119.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_1119\\api-v1-jdq-1119.json.gz',
+   'DATA'),
+  ('sklearn\\datasets\\_svmlight_format_fast.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\_svmlight_format_fast.cp312-win_amd64.lib',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jd-2.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_2\\api-v1-jd-2.json.gz',
+   'DATA'),
+  ('sklearn\\utils\\_seq_dataset.pxd.tp',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_seq_dataset.pxd.tp',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-292.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_292\\api-v1-jd-292.json.gz',
+   'DATA'),
+  ('sklearn\\svm\\src\\liblinear\\liblinear_helper.c',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\svm\\src\\liblinear\\liblinear_helper.c',
+   'DATA'),
+  ('sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-dv-1.json.gz',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\tests\\data\\openml\\id_61\\api-v1-jdl-dn-iris-l-2-dv-1.json.gz',
+   'DATA'),
+  ('sklearn\\ensemble\\_hist_gradient_boosting\\histogram.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\ensemble\\_hist_gradient_boosting\\histogram.pyx',
+   'DATA'),
+  ('sklearn\\tree\\_criterion.pxd',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\tree\\_criterion.pxd',
+   'DATA'),
+  ('sklearn\\datasets\\data\\iris.csv',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\datasets\\data\\iris.csv',
+   'DATA'),
+  ('sklearn\\utils\\_isfinite.pyx',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\utils\\_isfinite.pyx',
+   'DATA'),
+  ('sklearn\\cluster\\_k_means_lloyd.cp312-win_amd64.lib',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\sklearn\\cluster\\_k_means_lloyd.cp312-win_amd64.lib',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_da.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_it.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_it.qm',
    'DATA'),
   ('PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+  ('PyQt5\\Qt5\\translations\\qtbase_da.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_da.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+  ('PyQt5\\Qt5\\translations\\qtbase_ca.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_es.qm',
    'DATA'),
   ('PyQt5\\Qt5\\translations\\qt_cs.qm',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_cs.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_de.qm',
+  ('PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_de.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+  ('PyQt5\\Qt5\\translations\\qtbase_sk.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_es.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_tr.qm',
    'DATA'),
   ('PyQt5\\Qt5\\translations\\qt_help_da.qm',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_da.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_sv.qm',
+  ('PyQt5\\Qt5\\translations\\qt_help_pl.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_pl.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_lv.qm',
+  ('PyQt5\\Qt5\\translations\\qt_help_es.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pt.qm',
    'DATA'),
   ('PyQt5\\Qt5\\translations\\qtbase_cs.qm',
    'E:\\TFT APP '
@@ -2472,166 +2542,110 @@
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_en.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_it.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_it.qm',
-   'DATA'),
   ('PyQt5\\Qt5\\translations\\qt_help_sl.qm',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sl.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_ar.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ar.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_de.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_de.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_it.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_it.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_fa.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fa.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_gd.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_gd.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_ar.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ar.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_tr.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_tr.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_sk.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sk.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_ja.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ja.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_ko.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ko.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_tr.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_tr.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_sl.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sl.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_ko.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ko.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_lt.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lt.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_sk.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sk.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_fi.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fi.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_fr.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fr.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_es.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_es.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_bg.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_bg.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_ca.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ca.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_ja.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ja.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_he.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_he.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_it.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_it.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_ca.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ca.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_de.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_de.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_pl.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_pl.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_ru.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ru.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_ja.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ja.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_da.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_da.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_ru.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ru.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_en.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_en.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_en.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_en.qm',
-   'DATA'),
-  ('PyQt5\\Qt5\\translations\\qtbase_uk.qm',
-   'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_uk.qm',
    'DATA'),
   ('PyQt5\\Qt5\\translations\\qt_gl.qm',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gl.qm',
    'DATA'),
-  ('PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+  ('PyQt5\\Qt5\\translations\\qt_help_gl.qm',
    'E:\\TFT APP '
-   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_he.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_de.qm',
+   'E:\\TFT APP '
+   'OFFICIAL\\venv\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_de.qm',
    'DATA')],
  [],
  False,
  False,
- 1731961273,
+ 1731962882,
  [('runw.exe',
    'E:\\TFT APP '
    'OFFICIAL\\venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
