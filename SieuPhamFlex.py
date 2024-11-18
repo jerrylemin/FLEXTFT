@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import (
     QScrollArea, QMessageBox, QSpinBox, QComboBox, QGraphicsDropShadowEffect, QDialog
 )
 from PyQt5.QtGui import QPixmap, QMouseEvent, QPainter, QColor
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QCoreApplication
 
 import unittest
 from collections import defaultdict
@@ -14,6 +14,11 @@ import os
 from sklearn.neighbors import NearestNeighbors
 import numpy as np
 import random
+import requests
+
+VERSION = "1.0.0"
+REPO_OWNER = "jerrylemin"  # Thay bằng tên người dùng GitHub của bạn
+REPO_NAME = "FLEXTFT"     # Thay bằng tên repository của bạn
 
 def resource_path(relative_path):
     """Tìm đường dẫn tới tệp dữ liệu, hoạt động cả khi chạy dưới dạng script hoặc exe."""
@@ -1135,6 +1140,7 @@ class TeamBuilderAI:
 class TFTApp(QWidget):
     def __init__(self):
         super().__init__()
+        self.app_version = "v1.0.0"
         self.setWindowTitle("Siêu phẩm Flex")
         self.setGeometry(100, 100, 1400, 800)
 
@@ -1162,6 +1168,8 @@ class TFTApp(QWidget):
         main_layout = QHBoxLayout()
         left_layout = QVBoxLayout()
         right_layout = QVBoxLayout()
+
+        
 
         # 1. Vùng Hiển Thị Đội Hình
         self.team_layout = QHBoxLayout()
@@ -1377,12 +1385,35 @@ class TFTApp(QWidget):
         auto_shadow.setOffset(0, 0)
         auto_button.setGraphicsEffect(auto_shadow)
 
+        # 12. Nút Check for Updates
+        self.update_button = QPushButton("Check for Updates")
+        self.update_button.clicked.connect(self.check_for_updates)
+        self.update_button.setStyleSheet("""
+            QPushButton {
+                background-color: #444;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 5px;
+            }
+            QPushButton:hover {
+                background-color: #555;
+            }
+        """)
+        # Thêm hiệu ứng đổ bóng
+        update_shadow = QGraphicsDropShadowEffect()
+        update_shadow.setBlurRadius(10)
+        update_shadow.setColor(Qt.black)
+        update_shadow.setOffset(0, 0)
+        self.update_button.setGraphicsEffect(update_shadow)
+
         # Tạo một layout ngang để chứa các nút
         buttons_layout = QHBoxLayout()
         buttons_layout.addWidget(reset_button)
         buttons_layout.addWidget(save_button)
         buttons_layout.addWidget(view_favorites_button)
         buttons_layout.addWidget(auto_button)
+        buttons_layout.addWidget(self.update_button)
         buttons_layout.addStretch()
 
         # Add a stretch to push the buttons_layout to the bottom
@@ -1396,12 +1427,13 @@ class TFTApp(QWidget):
         # Add layouts to main layout
         main_layout.addLayout(left_layout, 3)
         main_layout.addLayout(right_layout, 7)
-
+        
         self.setLayout(main_layout)
 
         # Initial display updates
         self.update_team_display()
         self.update_traits_display()
+
 
     def populate_available_champions(self, sorted_champions=None, sort_by="Cost"):
         """Populate the available champions grid. If sorted_champions is provided, use it; otherwise, use the original list."""
@@ -1807,6 +1839,63 @@ class TFTApp(QWidget):
             self.favorites_window.exec_()
         else:
             self.favorites_window.populate_favorite_teams()
+
+    def check_for_updates(self):
+        """Check for updates from GitHub Releases."""
+        try:
+            # Định nghĩa thông tin repository GitHub của bạn
+            owner = "jerrylemin"  # Thay thế bằng tên người dùng GitHub của bạn
+            repo = "FLEXTFT"     # Thay thế bằng tên repository của bạn
+            api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+
+            response = requests.get(api_url)
+            if response.status_code == 200:
+                release_info = response.json()
+                latest_version = release_info.get("tag_name", "Unknown")
+                current_version = self.app_version  # Sử dụng thuộc tính app_version
+
+                if latest_version != current_version:
+                    QMessageBox.information(
+                        self,
+                        "Update Available",
+                        f"New version available: {latest_version}\nPlease visit the GitHub Releases page to download the latest version."
+                    )
+                else:
+                    QMessageBox.information(
+                        self,
+                        "Up to Date",
+                        "You are using the latest version."
+                    )
+            else:
+                QMessageBox.warning(
+                    self,
+                    "Update Check Failed",
+                    f"Failed to check for updates. Status Code: {response.status_code}"
+                )
+        except Exception as e:
+            QMessageBox.warning(
+                self,
+                "Error",
+                f"An error occurred while checking for updates: {e}"
+            )
+
+
+    def download_update(self, url):
+        try:
+            response = requests.get(url, stream=True)
+            if response.status_code == 200:
+                with open("update.exe", "wb") as f:
+                    for chunk in response.iter_content(chunk_size=1024):
+                        if chunk:
+                            f.write(chunk)
+                QMessageBox.information(self, "Download Complete", "Update downloaded successfully. Please run the update executable to install the new version.")
+                # Tự động khởi chạy tệp update.exe và thoát ứng dụng hiện tại
+                os.startfile("update.exe")  # Chỉ dành cho Windows
+                QCoreApplication.quit()
+            else:
+                QMessageBox.warning(self, "Error", "Failed to download the update.")
+        except Exception as e:
+            QMessageBox.warning(self, "Error", f"An error occurred during download: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
