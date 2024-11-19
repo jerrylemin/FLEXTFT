@@ -197,7 +197,7 @@ class FavoriteTeamsWindow(QDialog):
         self.clear_layout(self.scroll_layout)
 
         favorite_teams = self.team_builder_ai.favorite_teams
-        print(f"Populating favorite teams: {len(favorite_teams)} teams found.")  # Debug
+        # print(f"Populating favorite teams: {len(favorite_teams)} teams found.")  # Debug
 
         if not favorite_teams:
             no_team_label = QLabel("Không có đội hình yêu thích nào.")
@@ -206,7 +206,7 @@ class FavoriteTeamsWindow(QDialog):
             return
 
         for idx, team_entry in enumerate(favorite_teams):
-            print(f"Displaying team {idx + 1}: {team_entry['team']}")  # Debug
+            # print(f"Displaying team {idx + 1}: {team_entry['team']}")  # Debug
             team_widget = QWidget()
             team_layout = QVBoxLayout()
             team_widget.setLayout(team_layout)
@@ -470,273 +470,273 @@ class TeamBuilderAI:
         # # Chuẩn bị dữ liệu cho KNN
         # self.knn_model, self.team_vectors, self.n_neighbors = self.prepare_knn()
 
-    # def build_synergy_map(self):
-    #     """
-    #     Xây dựng synergy_map dựa trên dữ liệu đã cung cấp.
-    #     """
-    #     return {
-    #         "Bắn Tỉa": {
-    #             "Cỗ Máy Tự Động": 1.5,
-    #             "Cảnh Binh": 1.3,
-    #             "Ánh Lửa": 1.2,
-    #             "Giám Sát": 1.2,
-    #             "Pháo Binh": 1.1
-    #         },
-    #         "Chinh Phục": {
-    #             "Vệ Binh": 2.0,
-    #             "Song Hình": 1.5,
-    #             "Phục Kích": 1.3,
-    #             "Thống Trị": 1.3,
-    #             "Võ Sĩ Lồng Sắt": 1.2,
-    #             "Giám Sát": 1.2,
-    #             "Tiên Tri": 1.1,
-    #             "Sứ Giả": 1.1,
-    #             "Phù Thủy": 1.1,
-    #             "Tái Chế": 1.1,
-    #             "Đấu Sĩ": 1.0
-    #         },
-    #         "Cảnh Binh": {
-    #             "Phục Kích": 1.5,
-    #             "Cực Tốc": 1.3,
-    #             "Vệ Binh": 1.2,
-    #             "Bắn Tỉa": 1.2,
-    #             "Đấu Sĩ": 1.1,
-    #             "Phù Thủy": 1.1
-    #         },
-    #         "Cỗ Máy Tự Động": {
-    #             "Phục Kích": 1.5,
-    #             "Pháo Binh": 1.3,
-    #             "Vệ Binh": 1.2,
-    #             "Giám Sát": 1.2,
-    #             "Ánh Lửa": 1.2,
-    #             "Bắn Tỉa": 1.2,
-    #             "Thí Nghiệm": 1.1,
-    #             "Thống Trị": 1.1,
-    #             "Cảnh Binh": 1.1,
-    #             "Đấu Sĩ": 1.1
-    #         },
-    #         "Cực Tốc": {
-    #             "Phục Kích": 1.5,
-    #             "Cảnh Binh": 1.3,
-    #             "Vệ Binh": 1.2,
-    #             "Bắn Tỉa": 1.2,
-    #             "Đấu Sĩ": 1.1,
-    #             "Nổi Loạn": 1.1
-    #         },
-    #         "Gia Đình": {
-    #             "Phục Kích": 1.5,
-    #             "Phù Thủy": 1.3,
-    #             "Vệ Binh": 1.2,
-    #             "Giám Sát": 1.2,
-    #             "Pháo Binh": 1.1,
-    #             "Cảnh Binh": 1.1,
-    #             "Thống Trị": 1.1,
-    #             "Song Hình": 1.1,
-    #             "Tái Chế": 1.1
-    #         },
-    #         "Giám Sát": {
-    #             "Vệ Binh": 2.0,
-    #             "Phục Kích": 1.3,
-    #             "Chinh Phục": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Học Viện": 1.1,
-    #             "Tái Chế": 1.1,
-    #             "Cỗ Máy Tự Động": 1.1,
-    #             "Ánh Lửa": 1.1,
-    #             "Bắn Tỉa": 1.1,
-    #             "Pháo Binh": 1.1,
-    #             "Võ Sĩ Lồng Sắt": 1.1
-    #         },
-    #         "Hoa Hồng Đen": {
-    #             "Phù Thủy": 1.5,
-    #             "Sứ Giả": 1.3,
-    #             "Chinh Phục": 1.1,
-    #             "Vệ Binh": 1.1,
-    #             "Song Hình": 1.1,
-    #             "Thống Trị": 1.1,
-    #             "Tiên Tri": 1.1
-    #         },
-    #         "Hóa Chủ": {
-    #             "Phục Kích": 1.5,
-    #             "Thí Nghiệm": 1.3,
-    #             "Đấu Sĩ": 1.3,
-    #             "Thống Trị": 1.2,
-    #             "Tiên Tri": 1.2,
-    #             "Võ Sĩ Lồng Sắt": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Vệ Binh": 1.1,
-    #             "Song Hình": 1.1,
-    #             "Cảnh Binh": 1.1,
-    #             "Sứ Giả": 1.1,
-    #             "Tay Bạc": 1.1
-    #         },
-    #         "Học Viện": {
-    #             "Phù Thủy": 1.5,
-    #             "Vệ Binh": 1.3,
-    #             "Nổi Loạn": 1.2,
-    #             "Pháo Binh": 1.2,
-    #             "Tái Chế": 1.2,
-    #             "Tiên Tri": 1.1,
-    #             "Chinh Phục": 1.1,
-    #             "Phục Kích": 1.1
-    #         },
-    #         "Nổi Loạn": {
-    #             "Vệ Binh": 2.0,
-    #             "Phục Kích": 1.3,
-    #             "Cảnh Binh": 1.3,
-    #             "Tái Chế": 1.2,
-    #             "Pháo Binh": 1.2,
-    #             "Tiên Tri": 1.2,
-    #             "Chinh Phục": 1.2,
-    #             "Song Hình": 1.1,
-    #             "Phù Thủy": 1.1,
-    #             "Đấu Sĩ": 1.1,
-    #             "Cực Tốc": 1.1
-    #         },
-    #         "Pháo Binh": {
-    #             "Phù Thủy": 1.3,
-    #             "Vệ Binh": 1.3,
-    #             "Chinh Phục": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Tái Chế": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Phục Kích": 1.2,
-    #             "Cực Tốc": 1.2,
-    #             "Đấu Sĩ": 1.1
-    #         },
-    #         "Phù Thủy": {
-    #             "Hoa Hồng Đen": 1.5,
-    #             "Phục Kích": 1.3,
-    #             "Chinh Phục": 1.1,
-    #             "Pháo Binh": 1.3,
-    #             "Hóa Chủ": 1.3,
-    #             "Tái Chế": 1.1,
-    #             "Sứ Giả": 1.2,
-    #             "Vệ Binh": 1.2,
-    #             "Song Hình": 1.1
-    #         },
-    #         "Phục Kích": {
-    #             "Cảnh Binh": 1.5,
-    #             "Chinh Phục": 1.2,
-    #             "Tái Chế": 1.5,
-    #             "Pháo Binh": 1.2,
-    #             "Vệ Binh": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Phù Thủy": 1.3
-    #         },
-    #         "Song Hình": {
-    #             "Chinh Phục": 1.3,
-    #             "Võ Sĩ Lồng Sắt": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Vệ Binh": 1.2,
-    #             "Pháo Binh": 1.2,
-    #             "Thống Trị": 1.2
-    #         },
-    #         "Sứ Giả": {
-    #             "Chinh Phục": 1.1,
-    #             "Vệ Binh": 1.2,
-    #             "Song Hình": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Thống Trị": 1.2,
-    #             "Hóa Chủ": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Pháo Binh": 1.2
-    #         },
-    #         "Tay Bạc": {
-    #             "Hóa Chủ": 1.2,
-    #             "Võ Sĩ Lồng Sắt": 1.2
-    #         },
-    #         "Thí Nghiệm": {
-    #             "Hóa Chủ": 1.3,
-    #             "Phục Kích": 1.3,
-    #             "Đấu Sĩ": 1.2,
-    #             "Thống Trị": 1.2,
-    #             "Tiên Tri": 1.2
-    #         },
-    #         "Thống Trị": {
-    #             "Chinh Phục": 1.2,
-    #             "Song Hình": 1.2,
-    #             "Vệ Binh": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Cỗ Máy Tự Động": 1.2,
-    #             "Thí Nghiệm": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Tiên Tri": 1.2
-    #         },
-    #         "Tiên Tri": {
-    #             "Đấu Sĩ": 1.2,
-    #             "Vệ Binh": 1.2,
-    #             "Hóa Chủ": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Tái Chế": 1.2,
-    #             "Pháo Binh": 1.2,
-    #             "Chinh Phục": 1.1,
-    #             "Phục Kích": 1.2
-    #         },
-    #         "Tái Chế": {
-    #             "Phục Kích": 1.5,
-    #             "Pháo Binh": 1.3,
-    #             "Vệ Binh": 1.2,
-    #             "Chinh Phục": 1.1,
-    #             "Sứ Giả": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Võ Sĩ Lồng Sắt": 1.2,
-    #             "Phù Thủy": 1.1
-    #         },
-    #         "Vua Phế Liệu": {
-    #             "Vệ Binh": 1.2,
-    #             "Phục Kích": 1.2,
-    #             "Chinh Phục": 1.2,
-    #             "Song Hình": 1.2,
-    #             "Đấu Sĩ": 1.2
-    #         },
-    #         "Võ Sĩ Lồng Sắt": {
-    #             "Chinh Phục": 1.2,
-    #             "Song Hình": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Phục Kích": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Thí Nghiệm": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Thống Trị": 1.2,
-    #             "Vệ Binh": 1.2
-    #         },
-    #         "Vệ Binh": {
-    #             "Chinh Phục": 1.2,
-    #             "Song Hình": 1.2,
-    #             "Phù Thủy": 1.2,
-    #             "Pháo Binh": 1.2,
-    #             "Tái Chế": 1.2,
-    #             "Nổi Loạn": 1.2,
-    #             "Thống Trị": 1.2,
-    #             "Đấu Sĩ": 1.2,
-    #             "Phục Kích": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Sứ Giả": 1.2,
-    #             "Tiên Tri": 1.2
-    #         },
-    #         "Ánh Lửa": {
-    #             "Pháo Binh": 1.2,
-    #             "Cảnh Binh": 1.2,
-    #             "Thí Nghiệm": 1.2,
-    #             "Giám Sát": 1.2,
-    #             "Bắn Tỉa": 1.2
-    #         },
-    #         "Đấu Sĩ": {
-    #             "Phục Kích": 1.5,
-    #             "Cảnh Binh": 1.3,
-    #             "Sứ Giả": 1.2,
-    #             "Thống Trị": 1.2,
-    #             "Tiên Tri": 1.2,
-    #             "Vệ Binh": 1.2
-    #         }
-    #     }
+    def build_synergy_map(self):
+        """
+        Xây dựng synergy_map dựa trên dữ liệu đã cung cấp.
+        """
+        return {
+            "Bắn Tỉa": {
+                "Cỗ Máy Tự Động": 1.5,
+                "Cảnh Binh": 1.3,
+                "Ánh Lửa": 1.2,
+                "Giám Sát": 1.2,
+                "Pháo Binh": 1.1
+            },
+            "Chinh Phục": {
+                "Vệ Binh": 2.0,
+                "Song Hình": 1.5,
+                "Phục Kích": 1.3,
+                "Thống Trị": 1.3,
+                "Võ Sĩ Lồng Sắt": 1.2,
+                "Giám Sát": 1.2,
+                "Tiên Tri": 1.1,
+                "Sứ Giả": 1.1,
+                "Phù Thủy": 1.1,
+                "Tái Chế": 1.1,
+                "Đấu Sĩ": 1.0
+            },
+            "Cảnh Binh": {
+                "Phục Kích": 1.5,
+                "Cực Tốc": 1.3,
+                "Vệ Binh": 1.2,
+                "Bắn Tỉa": 1.2,
+                "Đấu Sĩ": 1.1,
+                "Phù Thủy": 1.1
+            },
+            "Cỗ Máy Tự Động": {
+                "Phục Kích": 1.5,
+                "Pháo Binh": 1.3,
+                "Vệ Binh": 1.2,
+                "Giám Sát": 1.2,
+                "Ánh Lửa": 1.2,
+                "Bắn Tỉa": 1.2,
+                "Thí Nghiệm": 1.1,
+                "Thống Trị": 1.1,
+                "Cảnh Binh": 1.1,
+                "Đấu Sĩ": 1.1
+            },
+            "Cực Tốc": {
+                "Phục Kích": 1.5,
+                "Cảnh Binh": 1.3,
+                "Vệ Binh": 1.2,
+                "Bắn Tỉa": 1.2,
+                "Đấu Sĩ": 1.1,
+                "Nổi Loạn": 1.1
+            },
+            "Gia Đình": {
+                "Phục Kích": 1.5,
+                "Phù Thủy": 1.3,
+                "Vệ Binh": 1.2,
+                "Giám Sát": 1.2,
+                "Pháo Binh": 1.1,
+                "Cảnh Binh": 1.1,
+                "Thống Trị": 1.1,
+                "Song Hình": 1.1,
+                "Tái Chế": 1.1
+            },
+            "Giám Sát": {
+                "Vệ Binh": 2.0,
+                "Phục Kích": 1.3,
+                "Chinh Phục": 1.2,
+                "Phù Thủy": 1.2,
+                "Sứ Giả": 1.2,
+                "Học Viện": 1.1,
+                "Tái Chế": 1.1,
+                "Cỗ Máy Tự Động": 1.1,
+                "Ánh Lửa": 1.1,
+                "Bắn Tỉa": 1.1,
+                "Pháo Binh": 1.1,
+                "Võ Sĩ Lồng Sắt": 1.1
+            },
+            "Hoa Hồng Đen": {
+                "Phù Thủy": 1.5,
+                "Sứ Giả": 1.3,
+                "Chinh Phục": 1.1,
+                "Vệ Binh": 1.1,
+                "Song Hình": 1.1,
+                "Thống Trị": 1.1,
+                "Tiên Tri": 1.1
+            },
+            "Hóa Chủ": {
+                "Phục Kích": 1.5,
+                "Thí Nghiệm": 1.3,
+                "Đấu Sĩ": 1.3,
+                "Thống Trị": 1.2,
+                "Tiên Tri": 1.2,
+                "Võ Sĩ Lồng Sắt": 1.2,
+                "Phù Thủy": 1.2,
+                "Vệ Binh": 1.1,
+                "Song Hình": 1.1,
+                "Cảnh Binh": 1.1,
+                "Sứ Giả": 1.1,
+                "Tay Bạc": 1.1
+            },
+            "Học Viện": {
+                "Phù Thủy": 1.5,
+                "Vệ Binh": 1.3,
+                "Nổi Loạn": 1.2,
+                "Pháo Binh": 1.2,
+                "Tái Chế": 1.2,
+                "Tiên Tri": 1.1,
+                "Chinh Phục": 1.1,
+                "Phục Kích": 1.1
+            },
+            "Nổi Loạn": {
+                "Vệ Binh": 2.0,
+                "Phục Kích": 1.3,
+                "Cảnh Binh": 1.3,
+                "Tái Chế": 1.2,
+                "Pháo Binh": 1.2,
+                "Tiên Tri": 1.2,
+                "Chinh Phục": 1.2,
+                "Song Hình": 1.1,
+                "Phù Thủy": 1.1,
+                "Đấu Sĩ": 1.1,
+                "Cực Tốc": 1.1
+            },
+            "Pháo Binh": {
+                "Phù Thủy": 1.3,
+                "Vệ Binh": 1.3,
+                "Chinh Phục": 1.2,
+                "Sứ Giả": 1.2,
+                "Tái Chế": 1.2,
+                "Cảnh Binh": 1.2,
+                "Phục Kích": 1.2,
+                "Cực Tốc": 1.2,
+                "Đấu Sĩ": 1.1
+            },
+            "Phù Thủy": {
+                "Hoa Hồng Đen": 1.5,
+                "Phục Kích": 1.3,
+                "Chinh Phục": 1.1,
+                "Pháo Binh": 1.3,
+                "Hóa Chủ": 1.3,
+                "Tái Chế": 1.1,
+                "Sứ Giả": 1.2,
+                "Vệ Binh": 1.2,
+                "Song Hình": 1.1
+            },
+            "Phục Kích": {
+                "Cảnh Binh": 1.5,
+                "Chinh Phục": 1.2,
+                "Tái Chế": 1.5,
+                "Pháo Binh": 1.2,
+                "Vệ Binh": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Phù Thủy": 1.3
+            },
+            "Song Hình": {
+                "Chinh Phục": 1.3,
+                "Võ Sĩ Lồng Sắt": 1.2,
+                "Phù Thủy": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Sứ Giả": 1.2,
+                "Vệ Binh": 1.2,
+                "Pháo Binh": 1.2,
+                "Thống Trị": 1.2
+            },
+            "Sứ Giả": {
+                "Chinh Phục": 1.1,
+                "Vệ Binh": 1.2,
+                "Song Hình": 1.2,
+                "Phù Thủy": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Thống Trị": 1.2,
+                "Hóa Chủ": 1.2,
+                "Cảnh Binh": 1.2,
+                "Pháo Binh": 1.2
+            },
+            "Tay Bạc": {
+                "Hóa Chủ": 1.2,
+                "Võ Sĩ Lồng Sắt": 1.2
+            },
+            "Thí Nghiệm": {
+                "Hóa Chủ": 1.3,
+                "Phục Kích": 1.3,
+                "Đấu Sĩ": 1.2,
+                "Thống Trị": 1.2,
+                "Tiên Tri": 1.2
+            },
+            "Thống Trị": {
+                "Chinh Phục": 1.2,
+                "Song Hình": 1.2,
+                "Vệ Binh": 1.2,
+                "Phù Thủy": 1.2,
+                "Sứ Giả": 1.2,
+                "Cỗ Máy Tự Động": 1.2,
+                "Thí Nghiệm": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Tiên Tri": 1.2
+            },
+            "Tiên Tri": {
+                "Đấu Sĩ": 1.2,
+                "Vệ Binh": 1.2,
+                "Hóa Chủ": 1.2,
+                "Phù Thủy": 1.2,
+                "Tái Chế": 1.2,
+                "Pháo Binh": 1.2,
+                "Chinh Phục": 1.1,
+                "Phục Kích": 1.2
+            },
+            "Tái Chế": {
+                "Phục Kích": 1.5,
+                "Pháo Binh": 1.3,
+                "Vệ Binh": 1.2,
+                "Chinh Phục": 1.1,
+                "Sứ Giả": 1.2,
+                "Cảnh Binh": 1.2,
+                "Võ Sĩ Lồng Sắt": 1.2,
+                "Phù Thủy": 1.1
+            },
+            "Vua Phế Liệu": {
+                "Vệ Binh": 1.2,
+                "Phục Kích": 1.2,
+                "Chinh Phục": 1.2,
+                "Song Hình": 1.2,
+                "Đấu Sĩ": 1.2
+            },
+            "Võ Sĩ Lồng Sắt": {
+                "Chinh Phục": 1.2,
+                "Song Hình": 1.2,
+                "Phù Thủy": 1.2,
+                "Cảnh Binh": 1.2,
+                "Phục Kích": 1.2,
+                "Sứ Giả": 1.2,
+                "Thí Nghiệm": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Thống Trị": 1.2,
+                "Vệ Binh": 1.2
+            },
+            "Vệ Binh": {
+                "Chinh Phục": 1.2,
+                "Song Hình": 1.2,
+                "Phù Thủy": 1.2,
+                "Pháo Binh": 1.2,
+                "Tái Chế": 1.2,
+                "Nổi Loạn": 1.2,
+                "Thống Trị": 1.2,
+                "Đấu Sĩ": 1.2,
+                "Phục Kích": 1.2,
+                "Cảnh Binh": 1.2,
+                "Sứ Giả": 1.2,
+                "Tiên Tri": 1.2
+            },
+            "Ánh Lửa": {
+                "Pháo Binh": 1.2,
+                "Cảnh Binh": 1.2,
+                "Thí Nghiệm": 1.2,
+                "Giám Sát": 1.2,
+                "Bắn Tỉa": 1.2
+            },
+            "Đấu Sĩ": {
+                "Phục Kích": 1.5,
+                "Cảnh Binh": 1.3,
+                "Sứ Giả": 1.2,
+                "Thống Trị": 1.2,
+                "Tiên Tri": 1.2,
+                "Vệ Binh": 1.2
+            }
+        }
 
     def load_favorite_teams(self):
         if os.path.exists(self.favorites_file):

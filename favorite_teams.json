@@ -1241,5 +1241,158 @@
         ],
         "emblems": {},
         "level": 6
+    },
+    {
+        "team": [
+            "Lux",
+            "Leona",
+            "Ezreal",
+            "Corki",
+            "Heimer",
+            "Illaoi",
+            "Jayce",
+            "Rumble"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Morgana",
+            "Vex",
+            "Rell",
+            "Renata Glasc",
+            "Nunu",
+            "Elise",
+            "Heimer",
+            "Malzahar",
+            "Rumble"
+        ],
+        "emblems": {},
+        "level": 9
+    },
+    {
+        "team": [
+            "Amumu",
+            "Vander",
+            "Zeri",
+            "Scar",
+            "Kog'Maw",
+            "Ekko",
+            "Garen",
+            "Caitlyn"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Darius",
+            "Draven",
+            "Rell",
+            "Tristana",
+            "Nami",
+            "Swain",
+            "Ambessa",
+            "Garen",
+            "Mordekaiser"
+        ],
+        "emblems": {},
+        "level": 9
+    },
+    {
+        "team": [
+            "Blitzcrank",
+            "Cassiopeia",
+            "Dr. Mundo",
+            "Elise",
+            "Silco",
+            "LeBlanc",
+            "Mordekaiser"
+        ],
+        "emblems": {},
+        "level": 7
+    },
+    {
+        "team": [
+            "Powder",
+            "Camille",
+            "Loris",
+            "Scar",
+            "Smeech",
+            "Ekko",
+            "Vi",
+            "Jinx"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Morgana",
+            "Vex",
+            "Rell",
+            "Renata Glasc",
+            "Nunu",
+            "Elise",
+            "Heimer",
+            "Illaoi"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Darius",
+            "Draven",
+            "Rell",
+            "Vladimir",
+            "Gangplank",
+            "Swain",
+            "Ambessa",
+            "Rumble"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Steb",
+            "Maddie",
+            "Trundle",
+            "Sett",
+            "Renni",
+            "Gangplank",
+            "Nunu",
+            "Elise"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Powder",
+            "Trundle",
+            "Tristana",
+            "Ziggs",
+            "Gangplank",
+            "Corki",
+            "Ekko",
+            "Elise"
+        ],
+        "emblems": {},
+        "level": 8
+    },
+    {
+        "team": [
+            "Powder",
+            "Darius",
+            "Singed",
+            "Trundle",
+            "Vander",
+            "Rell"
+        ],
+        "emblems": {},
+        "level": 6
     }
 ]
