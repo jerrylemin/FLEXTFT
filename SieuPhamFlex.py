@@ -467,276 +467,276 @@ class TeamBuilderAI:
         self.favorite_teams = self.load_favorite_teams()
         self.trait_preferences = self.analyze_favorite_teams()
 
-        # Chuẩn bị dữ liệu cho KNN
-        self.knn_model, self.team_vectors, self.n_neighbors = self.prepare_knn()
+        # # Chuẩn bị dữ liệu cho KNN
+        # self.knn_model, self.team_vectors, self.n_neighbors = self.prepare_knn()
 
-    def build_synergy_map(self):
-        """
-        Xây dựng synergy_map dựa trên dữ liệu đã cung cấp.
-        """
-        return {
-            "Bắn Tỉa": {
-                "Cỗ Máy Tự Động": 1.5,
-                "Cảnh Binh": 1.3,
-                "Ánh Lửa": 1.2,
-                "Giám Sát": 1.2,
-                "Pháo Binh": 1.1
-            },
-            "Chinh Phục": {
-                "Vệ Binh": 2.0,
-                "Song Hình": 1.5,
-                "Phục Kích": 1.3,
-                "Thống Trị": 1.3,
-                "Võ Sĩ Lồng Sắt": 1.2,
-                "Giám Sát": 1.2,
-                "Tiên Tri": 1.1,
-                "Sứ Giả": 1.1,
-                "Phù Thủy": 1.1,
-                "Tái Chế": 1.1,
-                "Đấu Sĩ": 1.0
-            },
-            "Cảnh Binh": {
-                "Phục Kích": 1.5,
-                "Cực Tốc": 1.3,
-                "Vệ Binh": 1.2,
-                "Bắn Tỉa": 1.2,
-                "Đấu Sĩ": 1.1,
-                "Phù Thủy": 1.1
-            },
-            "Cỗ Máy Tự Động": {
-                "Phục Kích": 1.5,
-                "Pháo Binh": 1.3,
-                "Vệ Binh": 1.2,
-                "Giám Sát": 1.2,
-                "Ánh Lửa": 1.2,
-                "Bắn Tỉa": 1.2,
-                "Thí Nghiệm": 1.1,
-                "Thống Trị": 1.1,
-                "Cảnh Binh": 1.1,
-                "Đấu Sĩ": 1.1
-            },
-            "Cực Tốc": {
-                "Phục Kích": 1.5,
-                "Cảnh Binh": 1.3,
-                "Vệ Binh": 1.2,
-                "Bắn Tỉa": 1.2,
-                "Đấu Sĩ": 1.1,
-                "Nổi Loạn": 1.1
-            },
-            "Gia Đình": {
-                "Phục Kích": 1.5,
-                "Phù Thủy": 1.3,
-                "Vệ Binh": 1.2,
-                "Giám Sát": 1.2,
-                "Pháo Binh": 1.1,
-                "Cảnh Binh": 1.1,
-                "Thống Trị": 1.1,
-                "Song Hình": 1.1,
-                "Tái Chế": 1.1
-            },
-            "Giám Sát": {
-                "Vệ Binh": 2.0,
-                "Phục Kích": 1.3,
-                "Chinh Phục": 1.2,
-                "Phù Thủy": 1.2,
-                "Sứ Giả": 1.2,
-                "Học Viện": 1.1,
-                "Tái Chế": 1.1,
-                "Cỗ Máy Tự Động": 1.1,
-                "Ánh Lửa": 1.1,
-                "Bắn Tỉa": 1.1,
-                "Pháo Binh": 1.1,
-                "Võ Sĩ Lồng Sắt": 1.1
-            },
-            "Hoa Hồng Đen": {
-                "Phù Thủy": 1.5,
-                "Sứ Giả": 1.3,
-                "Chinh Phục": 1.1,
-                "Vệ Binh": 1.1,
-                "Song Hình": 1.1,
-                "Thống Trị": 1.1,
-                "Tiên Tri": 1.1
-            },
-            "Hóa Chủ": {
-                "Phục Kích": 1.5,
-                "Thí Nghiệm": 1.3,
-                "Đấu Sĩ": 1.3,
-                "Thống Trị": 1.2,
-                "Tiên Tri": 1.2,
-                "Võ Sĩ Lồng Sắt": 1.2,
-                "Phù Thủy": 1.2,
-                "Vệ Binh": 1.1,
-                "Song Hình": 1.1,
-                "Cảnh Binh": 1.1,
-                "Sứ Giả": 1.1,
-                "Tay Bạc": 1.1
-            },
-            "Học Viện": {
-                "Phù Thủy": 1.5,
-                "Vệ Binh": 1.3,
-                "Nổi Loạn": 1.2,
-                "Pháo Binh": 1.2,
-                "Tái Chế": 1.2,
-                "Tiên Tri": 1.1,
-                "Chinh Phục": 1.1,
-                "Phục Kích": 1.1
-            },
-            "Nổi Loạn": {
-                "Vệ Binh": 2.0,
-                "Phục Kích": 1.3,
-                "Cảnh Binh": 1.3,
-                "Tái Chế": 1.2,
-                "Pháo Binh": 1.2,
-                "Tiên Tri": 1.2,
-                "Chinh Phục": 1.2,
-                "Song Hình": 1.1,
-                "Phù Thủy": 1.1,
-                "Đấu Sĩ": 1.1,
-                "Cực Tốc": 1.1
-            },
-            "Pháo Binh": {
-                "Phù Thủy": 1.3,
-                "Vệ Binh": 1.3,
-                "Chinh Phục": 1.2,
-                "Sứ Giả": 1.2,
-                "Tái Chế": 1.2,
-                "Cảnh Binh": 1.2,
-                "Phục Kích": 1.2,
-                "Cực Tốc": 1.2,
-                "Đấu Sĩ": 1.1
-            },
-            "Phù Thủy": {
-                "Hoa Hồng Đen": 1.5,
-                "Phục Kích": 1.3,
-                "Chinh Phục": 1.1,
-                "Pháo Binh": 1.3,
-                "Hóa Chủ": 1.3,
-                "Tái Chế": 1.1,
-                "Sứ Giả": 1.2,
-                "Vệ Binh": 1.2,
-                "Song Hình": 1.1
-            },
-            "Phục Kích": {
-                "Cảnh Binh": 1.5,
-                "Chinh Phục": 1.2,
-                "Tái Chế": 1.5,
-                "Pháo Binh": 1.2,
-                "Vệ Binh": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Phù Thủy": 1.3
-            },
-            "Song Hình": {
-                "Chinh Phục": 1.3,
-                "Võ Sĩ Lồng Sắt": 1.2,
-                "Phù Thủy": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Sứ Giả": 1.2,
-                "Vệ Binh": 1.2,
-                "Pháo Binh": 1.2,
-                "Thống Trị": 1.2
-            },
-            "Sứ Giả": {
-                "Chinh Phục": 1.1,
-                "Vệ Binh": 1.2,
-                "Song Hình": 1.2,
-                "Phù Thủy": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Thống Trị": 1.2,
-                "Hóa Chủ": 1.2,
-                "Cảnh Binh": 1.2,
-                "Pháo Binh": 1.2
-            },
-            "Tay Bạc": {
-                "Hóa Chủ": 1.2,
-                "Võ Sĩ Lồng Sắt": 1.2
-            },
-            "Thí Nghiệm": {
-                "Hóa Chủ": 1.3,
-                "Phục Kích": 1.3,
-                "Đấu Sĩ": 1.2,
-                "Thống Trị": 1.2,
-                "Tiên Tri": 1.2
-            },
-            "Thống Trị": {
-                "Chinh Phục": 1.2,
-                "Song Hình": 1.2,
-                "Vệ Binh": 1.2,
-                "Phù Thủy": 1.2,
-                "Sứ Giả": 1.2,
-                "Cỗ Máy Tự Động": 1.2,
-                "Thí Nghiệm": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Tiên Tri": 1.2
-            },
-            "Tiên Tri": {
-                "Đấu Sĩ": 1.2,
-                "Vệ Binh": 1.2,
-                "Hóa Chủ": 1.2,
-                "Phù Thủy": 1.2,
-                "Tái Chế": 1.2,
-                "Pháo Binh": 1.2,
-                "Chinh Phục": 1.1,
-                "Phục Kích": 1.2
-            },
-            "Tái Chế": {
-                "Phục Kích": 1.5,
-                "Pháo Binh": 1.3,
-                "Vệ Binh": 1.2,
-                "Chinh Phục": 1.1,
-                "Sứ Giả": 1.2,
-                "Cảnh Binh": 1.2,
-                "Võ Sĩ Lồng Sắt": 1.2,
-                "Phù Thủy": 1.1
-            },
-            "Vua Phế Liệu": {
-                "Vệ Binh": 1.2,
-                "Phục Kích": 1.2,
-                "Chinh Phục": 1.2,
-                "Song Hình": 1.2,
-                "Đấu Sĩ": 1.2
-            },
-            "Võ Sĩ Lồng Sắt": {
-                "Chinh Phục": 1.2,
-                "Song Hình": 1.2,
-                "Phù Thủy": 1.2,
-                "Cảnh Binh": 1.2,
-                "Phục Kích": 1.2,
-                "Sứ Giả": 1.2,
-                "Thí Nghiệm": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Thống Trị": 1.2,
-                "Vệ Binh": 1.2
-            },
-            "Vệ Binh": {
-                "Chinh Phục": 1.2,
-                "Song Hình": 1.2,
-                "Phù Thủy": 1.2,
-                "Pháo Binh": 1.2,
-                "Tái Chế": 1.2,
-                "Nổi Loạn": 1.2,
-                "Thống Trị": 1.2,
-                "Đấu Sĩ": 1.2,
-                "Phục Kích": 1.2,
-                "Cảnh Binh": 1.2,
-                "Sứ Giả": 1.2,
-                "Tiên Tri": 1.2
-            },
-            "Ánh Lửa": {
-                "Pháo Binh": 1.2,
-                "Cảnh Binh": 1.2,
-                "Thí Nghiệm": 1.2,
-                "Giám Sát": 1.2,
-                "Bắn Tỉa": 1.2
-            },
-            "Đấu Sĩ": {
-                "Phục Kích": 1.5,
-                "Cảnh Binh": 1.3,
-                "Sứ Giả": 1.2,
-                "Thống Trị": 1.2,
-                "Tiên Tri": 1.2,
-                "Vệ Binh": 1.2
-            }
-        }
+    # def build_synergy_map(self):
+    #     """
+    #     Xây dựng synergy_map dựa trên dữ liệu đã cung cấp.
+    #     """
+    #     return {
+    #         "Bắn Tỉa": {
+    #             "Cỗ Máy Tự Động": 1.5,
+    #             "Cảnh Binh": 1.3,
+    #             "Ánh Lửa": 1.2,
+    #             "Giám Sát": 1.2,
+    #             "Pháo Binh": 1.1
+    #         },
+    #         "Chinh Phục": {
+    #             "Vệ Binh": 2.0,
+    #             "Song Hình": 1.5,
+    #             "Phục Kích": 1.3,
+    #             "Thống Trị": 1.3,
+    #             "Võ Sĩ Lồng Sắt": 1.2,
+    #             "Giám Sát": 1.2,
+    #             "Tiên Tri": 1.1,
+    #             "Sứ Giả": 1.1,
+    #             "Phù Thủy": 1.1,
+    #             "Tái Chế": 1.1,
+    #             "Đấu Sĩ": 1.0
+    #         },
+    #         "Cảnh Binh": {
+    #             "Phục Kích": 1.5,
+    #             "Cực Tốc": 1.3,
+    #             "Vệ Binh": 1.2,
+    #             "Bắn Tỉa": 1.2,
+    #             "Đấu Sĩ": 1.1,
+    #             "Phù Thủy": 1.1
+    #         },
+    #         "Cỗ Máy Tự Động": {
+    #             "Phục Kích": 1.5,
+    #             "Pháo Binh": 1.3,
+    #             "Vệ Binh": 1.2,
+    #             "Giám Sát": 1.2,
+    #             "Ánh Lửa": 1.2,
+    #             "Bắn Tỉa": 1.2,
+    #             "Thí Nghiệm": 1.1,
+    #             "Thống Trị": 1.1,
+    #             "Cảnh Binh": 1.1,
+    #             "Đấu Sĩ": 1.1
+    #         },
+    #         "Cực Tốc": {
+    #             "Phục Kích": 1.5,
+    #             "Cảnh Binh": 1.3,
+    #             "Vệ Binh": 1.2,
+    #             "Bắn Tỉa": 1.2,
+    #             "Đấu Sĩ": 1.1,
+    #             "Nổi Loạn": 1.1
+    #         },
+    #         "Gia Đình": {
+    #             "Phục Kích": 1.5,
+    #             "Phù Thủy": 1.3,
+    #             "Vệ Binh": 1.2,
+    #             "Giám Sát": 1.2,
+    #             "Pháo Binh": 1.1,
+    #             "Cảnh Binh": 1.1,
+    #             "Thống Trị": 1.1,
+    #             "Song Hình": 1.1,
+    #             "Tái Chế": 1.1
+    #         },
+    #         "Giám Sát": {
+    #             "Vệ Binh": 2.0,
+    #             "Phục Kích": 1.3,
+    #             "Chinh Phục": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Học Viện": 1.1,
+    #             "Tái Chế": 1.1,
+    #             "Cỗ Máy Tự Động": 1.1,
+    #             "Ánh Lửa": 1.1,
+    #             "Bắn Tỉa": 1.1,
+    #             "Pháo Binh": 1.1,
+    #             "Võ Sĩ Lồng Sắt": 1.1
+    #         },
+    #         "Hoa Hồng Đen": {
+    #             "Phù Thủy": 1.5,
+    #             "Sứ Giả": 1.3,
+    #             "Chinh Phục": 1.1,
+    #             "Vệ Binh": 1.1,
+    #             "Song Hình": 1.1,
+    #             "Thống Trị": 1.1,
+    #             "Tiên Tri": 1.1
+    #         },
+    #         "Hóa Chủ": {
+    #             "Phục Kích": 1.5,
+    #             "Thí Nghiệm": 1.3,
+    #             "Đấu Sĩ": 1.3,
+    #             "Thống Trị": 1.2,
+    #             "Tiên Tri": 1.2,
+    #             "Võ Sĩ Lồng Sắt": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Vệ Binh": 1.1,
+    #             "Song Hình": 1.1,
+    #             "Cảnh Binh": 1.1,
+    #             "Sứ Giả": 1.1,
+    #             "Tay Bạc": 1.1
+    #         },
+    #         "Học Viện": {
+    #             "Phù Thủy": 1.5,
+    #             "Vệ Binh": 1.3,
+    #             "Nổi Loạn": 1.2,
+    #             "Pháo Binh": 1.2,
+    #             "Tái Chế": 1.2,
+    #             "Tiên Tri": 1.1,
+    #             "Chinh Phục": 1.1,
+    #             "Phục Kích": 1.1
+    #         },
+    #         "Nổi Loạn": {
+    #             "Vệ Binh": 2.0,
+    #             "Phục Kích": 1.3,
+    #             "Cảnh Binh": 1.3,
+    #             "Tái Chế": 1.2,
+    #             "Pháo Binh": 1.2,
+    #             "Tiên Tri": 1.2,
+    #             "Chinh Phục": 1.2,
+    #             "Song Hình": 1.1,
+    #             "Phù Thủy": 1.1,
+    #             "Đấu Sĩ": 1.1,
+    #             "Cực Tốc": 1.1
+    #         },
+    #         "Pháo Binh": {
+    #             "Phù Thủy": 1.3,
+    #             "Vệ Binh": 1.3,
+    #             "Chinh Phục": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Tái Chế": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Phục Kích": 1.2,
+    #             "Cực Tốc": 1.2,
+    #             "Đấu Sĩ": 1.1
+    #         },
+    #         "Phù Thủy": {
+    #             "Hoa Hồng Đen": 1.5,
+    #             "Phục Kích": 1.3,
+    #             "Chinh Phục": 1.1,
+    #             "Pháo Binh": 1.3,
+    #             "Hóa Chủ": 1.3,
+    #             "Tái Chế": 1.1,
+    #             "Sứ Giả": 1.2,
+    #             "Vệ Binh": 1.2,
+    #             "Song Hình": 1.1
+    #         },
+    #         "Phục Kích": {
+    #             "Cảnh Binh": 1.5,
+    #             "Chinh Phục": 1.2,
+    #             "Tái Chế": 1.5,
+    #             "Pháo Binh": 1.2,
+    #             "Vệ Binh": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Phù Thủy": 1.3
+    #         },
+    #         "Song Hình": {
+    #             "Chinh Phục": 1.3,
+    #             "Võ Sĩ Lồng Sắt": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Vệ Binh": 1.2,
+    #             "Pháo Binh": 1.2,
+    #             "Thống Trị": 1.2
+    #         },
+    #         "Sứ Giả": {
+    #             "Chinh Phục": 1.1,
+    #             "Vệ Binh": 1.2,
+    #             "Song Hình": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Thống Trị": 1.2,
+    #             "Hóa Chủ": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Pháo Binh": 1.2
+    #         },
+    #         "Tay Bạc": {
+    #             "Hóa Chủ": 1.2,
+    #             "Võ Sĩ Lồng Sắt": 1.2
+    #         },
+    #         "Thí Nghiệm": {
+    #             "Hóa Chủ": 1.3,
+    #             "Phục Kích": 1.3,
+    #             "Đấu Sĩ": 1.2,
+    #             "Thống Trị": 1.2,
+    #             "Tiên Tri": 1.2
+    #         },
+    #         "Thống Trị": {
+    #             "Chinh Phục": 1.2,
+    #             "Song Hình": 1.2,
+    #             "Vệ Binh": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Cỗ Máy Tự Động": 1.2,
+    #             "Thí Nghiệm": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Tiên Tri": 1.2
+    #         },
+    #         "Tiên Tri": {
+    #             "Đấu Sĩ": 1.2,
+    #             "Vệ Binh": 1.2,
+    #             "Hóa Chủ": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Tái Chế": 1.2,
+    #             "Pháo Binh": 1.2,
+    #             "Chinh Phục": 1.1,
+    #             "Phục Kích": 1.2
+    #         },
+    #         "Tái Chế": {
+    #             "Phục Kích": 1.5,
+    #             "Pháo Binh": 1.3,
+    #             "Vệ Binh": 1.2,
+    #             "Chinh Phục": 1.1,
+    #             "Sứ Giả": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Võ Sĩ Lồng Sắt": 1.2,
+    #             "Phù Thủy": 1.1
+    #         },
+    #         "Vua Phế Liệu": {
+    #             "Vệ Binh": 1.2,
+    #             "Phục Kích": 1.2,
+    #             "Chinh Phục": 1.2,
+    #             "Song Hình": 1.2,
+    #             "Đấu Sĩ": 1.2
+    #         },
+    #         "Võ Sĩ Lồng Sắt": {
+    #             "Chinh Phục": 1.2,
+    #             "Song Hình": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Phục Kích": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Thí Nghiệm": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Thống Trị": 1.2,
+    #             "Vệ Binh": 1.2
+    #         },
+    #         "Vệ Binh": {
+    #             "Chinh Phục": 1.2,
+    #             "Song Hình": 1.2,
+    #             "Phù Thủy": 1.2,
+    #             "Pháo Binh": 1.2,
+    #             "Tái Chế": 1.2,
+    #             "Nổi Loạn": 1.2,
+    #             "Thống Trị": 1.2,
+    #             "Đấu Sĩ": 1.2,
+    #             "Phục Kích": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Sứ Giả": 1.2,
+    #             "Tiên Tri": 1.2
+    #         },
+    #         "Ánh Lửa": {
+    #             "Pháo Binh": 1.2,
+    #             "Cảnh Binh": 1.2,
+    #             "Thí Nghiệm": 1.2,
+    #             "Giám Sát": 1.2,
+    #             "Bắn Tỉa": 1.2
+    #         },
+    #         "Đấu Sĩ": {
+    #             "Phục Kích": 1.5,
+    #             "Cảnh Binh": 1.3,
+    #             "Sứ Giả": 1.2,
+    #             "Thống Trị": 1.2,
+    #             "Tiên Tri": 1.2,
+    #             "Vệ Binh": 1.2
+    #         }
+    #     }
 
     def load_favorite_teams(self):
         if os.path.exists(self.favorites_file):
@@ -800,310 +800,411 @@ class TeamBuilderAI:
 
         return trait_count
 
-    def prepare_knn(self):
-        """
-        Chuẩn bị dữ liệu cho mô hình KNN dựa trên các đội hình đã lưu.
-        """
-        team_vectors = []
-        for team_entry in self.favorite_teams:
-            vector = self.team_to_vector(team_entry)
-            team_vectors.append(vector)
+    # def prepare_knn(self):
+    #     """
+    #     Chuẩn bị dữ liệu cho mô hình KNN dựa trên các đội hình đã lưu.
+    #     """
+    #     team_vectors = []
+    #     for team_entry in self.favorite_teams:
+    #         vector = self.team_to_vector(team_entry)
+    #         team_vectors.append(vector)
         
-        n_samples = len(team_vectors)
-        if n_samples == 0:
-            print("No favorite teams to train KNN.")
-            return None, None, 0  # Không có đội hình nào để fit
-        else:
-            # Đặt n_neighbors là tối thiểu giữa 3 và số lượng samples hiện có
-            n_neighbors = n_samples
-            knn = NearestNeighbors(n_neighbors=n_neighbors, algorithm='auto').fit(team_vectors)
-            print(f"KNN model trained with {n_samples} teams and n_neighbors={n_neighbors}.")
-            return knn, team_vectors, n_neighbors
+    #     n_samples = len(team_vectors)
+    #     if n_samples == 0:
+    #         print("No favorite teams to train KNN.")
+    #         return None, None, 0  # Không có đội hình nào để fit
+    #     else:
+    #         # Đặt n_neighbors là tối thiểu giữa 3 và số lượng samples hiện có
+    #         n_neighbors = n_samples
+    #         knn = NearestNeighbors(n_neighbors=n_neighbors, algorithm='auto').fit(team_vectors)
+    #         print(f"KNN model trained with {n_samples} teams and n_neighbors={n_neighbors}.")
+    #         return knn, team_vectors, n_neighbors
 
-    def team_to_vector(self, team_entry):
-        """
-        Chuyển đổi đội hình thành vector đặc trưng.
-        """
-        # Tạo một vector với chiều dài bằng số tộc hệ, mỗi phần tử đại diện cho số lượng của tộc hệ đó
-        trait_list = sorted(traits_active.keys())
-        vector = [0] * len(trait_list)
-        trait_index = {trait: idx for idx, trait in enumerate(trait_list)}
+    # def team_to_vector(self, team_entry):
+    #     """
+    #     Chuyển đổi đội hình thành vector đặc trưng.
+    #     """
+    #     # Tạo một vector với chiều dài bằng số tộc hệ, mỗi phần tử đại diện cho số lượng của tộc hệ đó
+    #     trait_list = sorted(traits_active.keys())
+    #     vector = [0] * len(trait_list)
+    #     trait_index = {trait: idx for idx, trait in enumerate(trait_list)}
         
-        # Tính từ các tướng trong đội
-        for champ_name in team_entry["team"]:
-            champ = next((c for c in champions if c["Name"] == champ_name), None)
-            if champ:
-                for trait in champ["Tộc Hệ"]:
-                    if trait in trait_index:
-                        vector[trait_index[trait]] += 1
-        # Tính từ emblem counts
-        for trait, count in team_entry["emblems"].items():
-            if trait in trait_index:
-                vector[trait_index[trait]] += count
-        return vector
+    #     # Tính từ các tướng trong đội
+    #     for champ_name in team_entry["team"]:
+    #         champ = next((c for c in champions if c["Name"] == champ_name), None)
+    #         if champ:
+    #             for trait in champ["Tộc Hệ"]:
+    #                 if trait in trait_index:
+    #                     vector[trait_index[trait]] += 1
+    #     # Tính từ emblem counts
+    #     for trait, count in team_entry["emblems"].items():
+    #         if trait in trait_index:
+    #             vector[trait_index[trait]] += count
+    #     return vector
 
-    def find_similar_teams(self, current_team, emblem_counts, max_team_size):
-        """
-        Tìm các đội hình tương tự đã lưu sử dụng mô hình KNN.
-        """
-        if not self.knn_model or self.n_neighbors == 0:
-            print("KNN model not initialized or no neighbors.")
-            return []
+    # def find_similar_teams(self, current_team, emblem_counts, max_team_size):
+    #     """
+    #     Tìm các đội hình tương tự đã lưu sử dụng mô hình KNN.
+    #     """
+    #     if not self.knn_model or self.n_neighbors == 0:
+    #         print("KNN model not initialized or no neighbors.")
+    #         return []
 
-        current_team_entry = {
-            "team": [champ["Name"] for champ in current_team],
-            "emblems": emblem_counts,
-            "level": max_team_size
-        }
-        current_vector = self.team_to_vector(current_team_entry)
+    #     current_team_entry = {
+    #         "team": [champ["Name"] for champ in current_team],
+    #         "emblems": emblem_counts,
+    #         "level": max_team_size
+    #     }
+    #     current_vector = self.team_to_vector(current_team_entry)
         
-        print(f"Current Vector: {current_vector}")
-        try:
-            distances, indices = self.knn_model.kneighbors([current_vector])
-        except Exception as e:
-            print(f"Error during KNN kneighbors: {e}")
-            return []
+    #     print(f"Current Vector: {current_vector}")
+    #     try:
+    #         distances, indices = self.knn_model.kneighbors([current_vector])
+    #     except Exception as e:
+    #         print(f"Error during KNN kneighbors: {e}")
+    #         return []
 
-        print(f"Indices Returned by KNN: {indices}")
-        print(f"Number of Favorite Teams: {len(self.favorite_teams)}")
+    #     print(f"Indices Returned by KNN: {indices}")
+    #     print(f"Number of Favorite Teams: {len(self.favorite_teams)}")
         
-        # Tránh truy cập ngoài phạm vi
-        similar_teams = []
-        for idx in indices[0]:
-            if 0 <= idx < len(self.favorite_teams):
-                similar_teams.append(self.favorite_teams[idx])
-            else:
-                print(f"Index {idx} is out of range for favorite_teams with length {len(self.favorite_teams)}")
+    #     # Tránh truy cập ngoài phạm vi
+    #     similar_teams = []
+    #     for idx in indices[0]:
+    #         if 0 <= idx < len(self.favorite_teams):
+    #             similar_teams.append(self.favorite_teams[idx])
+    #         else:
+    #             print(f"Index {idx} is out of range for favorite_teams with length {len(self.favorite_teams)}")
         
-        return similar_teams
+    #     return similar_teams
 
-    def _calculate_team_synergy(self, champion_traits, current_traits):
-        """
-        Tính toán bonus tương sinh cho tướng dựa trên synergy_map.
-        """
-        synergy_bonus = 0
-        for trait in champion_traits:
-            if trait in self.synergy_map:
-                for synergy_trait, weight in self.synergy_map[trait].items():
-                    if current_traits.get(synergy_trait, 0) > 0:
-                        synergy_bonus += weight
-        return synergy_bonus
+    # def _calculate_team_synergy(self, champion_traits, current_traits):
+    #     """
+    #     Tính toán bonus tương sinh cho tướng dựa trên synergy_map.
+    #     """
+    #     synergy_bonus = 0
+    #     for trait in champion_traits:
+    #         if trait in self.synergy_map:
+    #             for synergy_trait, weight in self.synergy_map[trait].items():
+    #                 if current_traits.get(synergy_trait, 0) > 0:
+    #                     synergy_bonus += weight
+    #     return synergy_bonus
 
-    def _calculate_rarity_bonus(self, champion):
-        """
-        Tính toán bonus dựa trên độ hiếm hoặc giá tiền của tướng.
-        """
-        rarity_bonus_map = {
-            1: 0.5,
-            2: 1.0,
-            3: 1.5,
-            4: 2.0,
-            5: 2.5
-        }
-        return rarity_bonus_map.get(champion["Cost"], 0)
+    # def _calculate_rarity_bonus(self, champion):
+    #     """
+    #     Tính toán bonus dựa trên độ hiếm hoặc giá tiền của tướng.
+    #     """
+    #     rarity_bonus_map = {
+    #         1: 0.5,
+    #         2: 1.0,
+    #         3: 1.5,
+    #         4: 2.0,
+    #         5: 2.5
+    #     }
+    #     return rarity_bonus_map.get(champion["Cost"], 0)
 
-    def _calculate_cost_penalty(self, champion):
-        """
-        Tính toán penalty dựa trên giá tiền của tướng để khuyến khích đội hình hiệu quả về chi phí.
-        """
-        cost_penalty_map = {
-            1: 0,
-            2: 0.2,
-            3: 0.5,
-            4: 0.8,
-            5: 1.0
-        }
-        return cost_penalty_map.get(champion["Cost"], 0)
+    # def _calculate_cost_penalty(self, champion):
+    #     """
+    #     Tính toán penalty dựa trên giá tiền của tướng để khuyến khích đội hình hiệu quả về chi phí.
+    #     """
+    #     cost_penalty_map = {
+    #         1: 0,
+    #         2: 0.2,
+    #         3: 0.5,
+    #         4: 0.8,
+    #         5: 1.0
+    #     }
+    #     return cost_penalty_map.get(champion["Cost"], 0)
 
-    def _calculate_champion_score(self, champion, current_traits, needed_traits, emblem_counts):
-        """
-        Tính toán điểm số cho từng tướng dựa trên nhiều tiêu chí.
-        """
-        # Tính các tộc hệ tạm thời nếu thêm tướng này
-        temp_traits = current_traits.copy()
-        for trait in champion["Tộc Hệ"]:
-            temp_traits[trait] = temp_traits.get(trait, 0) + 1
-        for trait, count in emblem_counts.items():
-            temp_traits[trait] = temp_traits.get(trait, 0) + count
+    # def _calculate_champion_score(self, champion, current_traits, needed_traits, emblem_counts):
+    #     """
+    #     Tính toán điểm số cho từng tướng dựa trên nhiều tiêu chí.
+    #     """
+    #     # Tính các tộc hệ tạm thời nếu thêm tướng này
+    #     temp_traits = current_traits.copy()
+    #     for trait in champion["Tộc Hệ"]:
+    #         temp_traits[trait] = temp_traits.get(trait, 0) + 1
+    #     for trait, count in emblem_counts.items():
+    #         temp_traits[trait] = temp_traits.get(trait, 0) + count
 
-        # Milestone progression score
-        milestone_score = 0
-        for trait, milestones in traits_active.items():
-            current_level = current_traits.get(trait, 0)
-            new_level = temp_traits.get(trait, 0)
+    #     # Milestone progression score
+    #     milestone_score = 0
+    #     for trait, milestones in traits_active.items():
+    #         current_level = current_traits.get(trait, 0)
+    #         new_level = temp_traits.get(trait, 0)
             
-            # Tìm mốc kích hoạt tiếp theo
-            next_milestone = next((m for m in milestones if m > current_level), None)
-            if next_milestone:
-                # Tính khoảng cách đến mốc tiếp theo trước và sau khi thêm tướng
-                distance_before = next_milestone - current_level
-                distance_after = next_milestone - new_level
+    #         # Tìm mốc kích hoạt tiếp theo
+    #         next_milestone = next((m for m in milestones if m > current_level), None)
+    #         if next_milestone:
+    #             # Tính khoảng cách đến mốc tiếp theo trước và sau khi thêm tướng
+    #             distance_before = next_milestone - current_level
+    #             distance_after = next_milestone - new_level
 
-                # Nếu khoảng cách giảm, tăng điểm
-                if distance_after < distance_before:
-                    milestone_score += (distance_before - distance_after) * 5  # Tăng trọng số
-                # Nếu đạt được mốc mới, tăng điểm nhiều hơn
-                if distance_after <= 0:
-                    milestone_score += 10  # Điểm thưởng cho việc đạt mốc mới
+    #             # Nếu khoảng cách giảm, tăng điểm
+    #             if distance_after < distance_before:
+    #                 milestone_score += (distance_before - distance_after) * 5  # Tăng trọng số
+    #             # Nếu đạt được mốc mới, tăng điểm nhiều hơn
+    #             if distance_after <= 0:
+    #                 milestone_score += 10  # Điểm thưởng cho việc đạt mốc mới
 
-        # Áp dụng hình phạt nếu tướng không đóng góp vào mốc kích hoạt nào
-        contributes_to_milestone = any(
-            temp_traits.get(trait, 0) >= milestones[0] for trait in champion["Tộc Hệ"]
-        )
-        if not contributes_to_milestone:
-            milestone_score -= 5  # Hình phạt
+    #     # Áp dụng hình phạt nếu tướng không đóng góp vào mốc kích hoạt nào
+    #     contributes_to_milestone = any(
+    #         temp_traits.get(trait, 0) >= milestones[0] for trait in champion["Tộc Hệ"]
+    #     )
+    #     if not contributes_to_milestone:
+    #         milestone_score -= 5  # Hình phạt
 
-        # Needed traits contribution
-        needed_traits_contribution = 0
-        for trait in champion["Tộc Hệ"]:
-            if trait in needed_traits:
-                # Tính điểm dựa trên khoảng cách đến mốc kích hoạt
-                distance = needed_traits[trait]
-                needed_traits_contribution += (1 / distance) * 10  # Khoảng cách càng nhỏ, điểm càng cao
+    #     # Needed traits contribution
+    #     needed_traits_contribution = 0
+    #     for trait in champion["Tộc Hệ"]:
+    #         if trait in needed_traits:
+    #             # Tính điểm dựa trên khoảng cách đến mốc kích hoạt
+    #             distance = needed_traits[trait]
+    #             needed_traits_contribution += (1 / distance) * 10  # Khoảng cách càng nhỏ, điểm càng cao
 
-        # Team diversity penalty
-        team_trait_overlap = sum(
-            1 for trait in champion["Tộc Hệ"] 
-            if current_traits.get(trait, 0) > 0
-        ) * 0.5  # Giảm trọng số
+    #     # Team diversity penalty
+    #     team_trait_overlap = sum(
+    #         1 for trait in champion["Tộc Hệ"] 
+    #         if current_traits.get(trait, 0) > 0
+    #     ) * 0.5  # Giảm trọng số
 
-        # Synergy bonus
-        synergy_bonus = self._calculate_team_synergy(champion["Tộc Hệ"], current_traits)
+    #     # Synergy bonus
+    #     synergy_bonus = self._calculate_team_synergy(champion["Tộc Hệ"], current_traits)
 
-        # Rarity và Cost consideration
-        rarity_bonus = self._calculate_rarity_bonus(champion)
-        cost_penalty = self._calculate_cost_penalty(champion)
+    #     # Rarity và Cost consideration
+    #     rarity_bonus = self._calculate_rarity_bonus(champion)
+    #     cost_penalty = self._calculate_cost_penalty(champion)
 
-        # Preference bonus từ trait_preferences
-        preference_bonus = 0
-        for trait in champion["Tộc Hệ"]:
-            preference_bonus += self.trait_preferences.get(trait, 0) * 0.1  # Điều chỉnh hệ số theo ý muốn
+    #     # Preference bonus từ trait_preferences
+    #     preference_bonus = 0
+    #     for trait in champion["Tộc Hệ"]:
+    #         preference_bonus += self.trait_preferences.get(trait, 0) * 0.1  # Điều chỉnh hệ số theo ý muốn
 
-        # Trọng số cho việc hoàn thiện mốc
-        milestone_completion_bonus = 0
-        for trait in champion["Tộc Hệ"]:
-            milestones = traits_active.get(trait, [])
-            # Tìm mốc tiếp theo
-            next_milestone = next((m for m in milestones if temp_traits.get(trait, 0) < m), None)
-            if next_milestone:
-                # Thêm điểm nếu tướng giúp đạt gần mốc tiếp theo
-                distance_to_milestone = next_milestone - current_traits.get(trait, 0)
-                if distance_to_milestone <= 2:
-                    milestone_completion_bonus += 1.5  # Tăng trọng số
+    #     # Trọng số cho việc hoàn thiện mốc
+    #     milestone_completion_bonus = 0
+    #     for trait in champion["Tộc Hệ"]:
+    #         milestones = traits_active.get(trait, [])
+    #         # Tìm mốc tiếp theo
+    #         next_milestone = next((m for m in milestones if temp_traits.get(trait, 0) < m), None)
+    #         if next_milestone:
+    #             # Thêm điểm nếu tướng giúp đạt gần mốc tiếp theo
+    #             distance_to_milestone = next_milestone - current_traits.get(trait, 0)
+    #             if distance_to_milestone <= 2:
+    #                 milestone_completion_bonus += 1.5  # Tăng trọng số
 
-        # Tổng điểm
-        score = (
-            milestone_score +
-            needed_traits_contribution +
-            synergy_bonus +
-            rarity_bonus -
-            cost_penalty +
-            preference_bonus
-        )
+    #     # Tổng điểm
+    #     score = (
+    #         milestone_score +
+    #         needed_traits_contribution +
+    #         synergy_bonus +
+    #         rarity_bonus -
+    #         cost_penalty +
+    #         preference_bonus
+    #     )
 
-        return score
+    #     return score
 
     def suggest_champions(self, current_team, max_team_size, all_champions, traits_active, emblem_counts):
         """
-        Đề xuất các tướng để hoàn thiện đội hình dựa trên các tiêu chí đã định.
-        
-        Parameters:
-            current_team (list): Danh sách các tướng hiện tại trong đội.
-            max_team_size (int): Kích thước tối đa của đội hình.
-            all_champions (list): Danh sách tất cả các tướng có thể chọn.
-            traits_active (dict): Dictionary chứa các tộc hệ và các mốc kích hoạt.
-            emblem_counts (dict): Dictionary chứa số lượng emblem của mỗi tộc hệ.
-        
-        Returns:
-            list: Danh sách các tướng được đề xuất để thêm vào đội hình.
+        Suggest champions to complete the team using a genetic algorithm.
         """
-        # 1. Tính số slot còn lại
+        # 1. Check if there are slots available
         slots_available = max_team_size - len(current_team)
         if slots_available <= 0:
             return []
 
-        # 2. Tính các tộc hệ hiện tại từ đội hình và emblem_counts
+        # 2. Initialize the population
+        population_size = 50   # Adjust as needed
+        generations = 50       # Adjust as needed
+        mutation_rate = 0.2    # Adjust as needed
+        crossover_rate = 0.7   # Adjust as needed
+
+        # Generate initial population
+        population = self.initialize_population(population_size, current_team, max_team_size, all_champions)
+
+        # Evolution loop
+        for generation in range(generations):
+            # Evaluate fitness
+            fitness_scores = []
+            for individual in population:
+                fitness = self.evaluate_fitness(individual, traits_active, emblem_counts)
+                fitness_scores.append(fitness)
+
+            # Selection
+            parents = self.select_parents(population, fitness_scores)
+
+            # Crossover
+            offspring = self.crossover(parents, crossover_rate, max_team_size, all_champions)
+
+            # Mutation
+            population = self.mutate_population(offspring, mutation_rate, all_champions, max_team_size)
+
+        # After evolution, select the best individual
+        best_fitness = -float('inf')
+        best_individual = None
+        for individual in population:
+            fitness = self.evaluate_fitness(individual, traits_active, emblem_counts)
+            if fitness > best_fitness:
+                best_fitness = fitness
+                best_individual = individual
+
+        # Determine which champions to add
+        champions_to_add = [champ for champ in best_individual if champ not in current_team]
+        # Randomly select up to slots_available champions to add
+        champions_to_add = random.sample(champions_to_add, min(len(champions_to_add), slots_available))
+
+        return champions_to_add
+
+    def initialize_population(self, population_size, current_team, max_team_size, all_champions):
+        # Initialize a population of teams
+        population = []
+        for _ in range(population_size):
+            # Start with the current team
+            team = current_team.copy()
+            # Fill up to max_team_size with random champions not in current team
+            potential_champions = [champ for champ in all_champions if champ not in team and champ["Name"] not in self.rejected_champions]
+            remaining_slots = max_team_size - len(team)
+            if remaining_slots > 0 and potential_champions:
+                team.extend(random.sample(potential_champions, min(len(potential_champions), remaining_slots)))
+            # Randomly mutate the team to introduce diversity
+            team = self.mutate_team(team, all_champions, max_team_size, mutation_rate=0.3)  # Added max_team_size
+            population.append(team)
+        return population
+
+    def evaluate_fitness(self, team, traits_active, emblem_counts):
+        # Compute the fitness of the team
         current_traits = defaultdict(int)
-        for champ in current_team:
+        for champ in team:
             for trait in champ["Tộc Hệ"]:
                 current_traits[trait] += 1
         for trait, count in emblem_counts.items():
             current_traits[trait] += count
 
-        # 3. Xác định các tộc hệ cần thiết dựa trên mốc kích hoạt
-        needed_traits = {}
+        # Fitness based on activated traits
+        fitness = 0
         for trait, milestones in traits_active.items():
-            current_level = current_traits.get(trait, 0)
-            # Tìm mốc kích hoạt tiếp theo
-            next_milestone = next((m for m in milestones if m > current_level), None)
-            if next_milestone:
-                distance = next_milestone - current_level
-                if distance <= slots_available + 1:  # Kiểm tra xem có thể đạt được không
-                    needed_traits[trait] = distance
+            count = current_traits.get(trait, 0)
+            activated_milestones = [m for m in milestones if count >= m]
+            if activated_milestones:
+                highest_milestone = max(activated_milestones)
+                # Assign weight to the trait based on preference
+                trait_weight = self.trait_preferences.get(trait, 1)
+                fitness += highest_milestone * trait_weight
 
-        # 4. Nếu không cần tộc hệ nào, sử dụng trait_preferences để đặt mục tiêu
-        if not needed_traits:
-            # Đặt mục tiêu dựa trên trait_preferences
-            for trait, preference in self.trait_preferences.items():
-                if current_traits.get(trait, 0) < preference:
-                    needed_traits[trait] = preference - current_traits.get(trait, 0)
+        # Synergy bonus
+        synergy_bonus = 0
+        for trait in current_traits:
+            if trait in self.synergy_map:
+                for synergy_trait, weight in self.synergy_map[trait].items():
+                    if current_traits.get(synergy_trait, 0) > 0:
+                        synergy_bonus += weight
+        fitness += synergy_bonus
 
-        # 5. Tìm kiếm các đội hình tương tự và điều chỉnh trait_preferences
-        similar_teams = self.find_similar_teams(current_team, emblem_counts, max_team_size)
-        for similar_team in similar_teams:
-            for trait, count in similar_team.get("emblems", {}).items():
-                self.trait_preferences[trait] += count * 0.1  # Điều chỉnh hệ số theo ý muốn
-            for champ_name in similar_team.get("team", []):
-                champ = next((c for c in all_champions if c["Name"] == champ_name), None)
-                if champ:
-                    for trait in champ["Tộc Hệ"]:
-                        self.trait_preferences[trait] += 0.1  # Điều chỉnh hệ số theo ý muốn
+        # Penalty for high-cost champions
+        total_cost = sum(champ["Cost"] for champ in team)
+        fitness -= total_cost * 0.05  # Adjust penalty weight as needed
 
-        # 6. Lọc các tướng tiềm năng
-        potential_champions = [
-            champ for champ in all_champions
-            if champ not in current_team
-            and champ["Name"] not in self.rejected_champions
-            and any(trait in needed_traits for trait in champ["Tộc Hệ"])
-        ]
+        # Encourage diversity (optional)
+        unique_traits = len(current_traits)
+        fitness += unique_traits * 0.1  # Adjust as needed
 
-        if not potential_champions:
-            return []
+        return fitness
 
-        # 7. Tính điểm số cho từng tướng tiềm năng
-        champion_scores = []
-        for champ in potential_champions:
-            score = self._calculate_champion_score(
-                champion=champ,
-                current_traits=current_traits,
-                needed_traits=needed_traits,
-                emblem_counts=emblem_counts
-            )
-            champion_scores.append((champ, score))
+    def select_parents(self, population, fitness_scores):
+        # Implement selection method, e.g., tournament selection
+        parents = []
+        tournament_size = 5  # Adjust as needed
+        for _ in range(len(population)):
+            tournament = random.sample(list(zip(population, fitness_scores)), tournament_size)
+            winner = max(tournament, key=lambda x: x[1])[0]
+            parents.append(winner)
+        return parents
 
-        # 8. Sắp xếp các tướng theo điểm số giảm dần
-        champion_scores.sort(key=lambda x: x[1], reverse=True)
+    def crossover(self, parents, crossover_rate, team_size, all_champions):
+        # Implement crossover to produce offspring
+        offspring = []
+        for i in range(0, len(parents), 2):
+            parent1 = parents[i]
+            if i+1 < len(parents):
+                parent2 = parents[i+1]
+            else:
+                parent2 = parents[0]
+            if random.random() < crossover_rate:
+                # Perform crossover
+                child1, child2 = self.crossover_parents(parent1, parent2, team_size, all_champions)
+                offspring.extend([child1, child2])
+            else:
+                # No crossover, copy parents
+                offspring.extend([parent1.copy(), parent2.copy()])
+        return offspring
 
-        # 9. Sử dụng top N để chọn ngẫu nhiên, ưu tiên các tướng có điểm cao nhất
-        top_n = 10  # Có thể điều chỉnh giá trị này tùy theo nhu cầu
-        top_champions = champion_scores[:top_n] if len(champion_scores) >= top_n else champion_scores
+    def crossover_parents(self, parent1, parent2, team_size, all_champions):
+        # Uniform crossover
+        child1 = []
+        child2 = []
+        for i in range(team_size):
+            if random.random() < 0.5:
+                if parent1[i] not in child1:
+                    child1.append(parent1[i])
+                if parent2[i] not in child2:
+                    child2.append(parent2[i])
+            else:
+                if parent2[i] not in child1:
+                    child1.append(parent2[i])
+                if parent1[i] not in child2:
+                    child2.append(parent1[i])
+        # Ensure no duplicates and correct team size
+        child1 = self.ensure_valid_team(child1, team_size, all_champions)
+        child2 = self.ensure_valid_team(child2, team_size, all_champions)
+        return child1, child2
 
-        # Sử dụng random.sample để chọn ngẫu nhiên từ top_champions
-        # Đảm bảo không vượt quá số slot còn lại
-        num_to_select = min(len(top_champions), slots_available)
-        selected_champions = random.sample(top_champions, num_to_select)
+    def ensure_valid_team(self, team, team_size, all_champions):
+        # Remove duplicates and fill up to team_size
+        unique_team = []
+        seen_names = set()
+        for champ in team:
+            name = champ['Name']
+            if name not in seen_names:
+                unique_team.append(champ)
+                seen_names.add(name)
+        team = unique_team
+        if len(team) < team_size:
+            # Add random champions to fill the team
+            potential_champions = [champ for champ in all_champions if champ['Name'] not in seen_names and champ["Name"] not in self.rejected_champions]
+            if potential_champions:
+                team.extend(random.sample(potential_champions, min(team_size - len(team), len(potential_champions))))
+        elif len(team) > team_size:
+            team = team[:team_size]
+        return team
 
-        # Lấy danh sách các tướng được chọn
-        champions_to_add = [champ for champ, score in selected_champions]
+    def mutate_population(self, population, mutation_rate, all_champions, team_size):
+        # Implement mutation by randomly swapping champions
+        mutated_population = []
+        for team in population:
+            if random.random() < mutation_rate:
+                team = self.mutate_team(team, all_champions, team_size)
+            mutated_population.append(team)
+        return mutated_population
 
-        return champions_to_add
-
+    def mutate_team(self, team, all_champions, team_size, mutation_rate=0.1):
+        # Swap out champions in the team based on mutation rate
+        team = team.copy()
+        for i in range(len(team)):
+            if random.random() < mutation_rate:
+                # Replace this champion
+                potential_champions = [champ for champ in all_champions if champ not in team and champ["Name"] not in self.rejected_champions]
+                if potential_champions:
+                    new_champion = random.choice(potential_champions)
+                    team[i] = new_champion
+        # Ensure valid team
+        team = self.ensure_valid_team(team, team_size, all_champions)
+        return team
+    
     def reject_champion(self, champion_name):
         """
         Bỏ qua một tướng để không bị đề xuất trong tương lai.
         """
         self.rejected_champions.add(champion_name)
-
+    
     def clear_rejected_champions(self):
         """
         Xóa tất cả các tướng đã bị từ chối khỏi danh sách từ chối.
