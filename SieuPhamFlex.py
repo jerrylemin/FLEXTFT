@@ -1840,62 +1840,52 @@ class TFTApp(QWidget):
         else:
             self.favorites_window.populate_favorite_teams()
 
-    def check_for_updates(self):
-        """Check for updates from GitHub Releases."""
+    def check_for_update():
         try:
-            # Định nghĩa thông tin repository GitHub của bạn
-            owner = "jerrylemin"  # Thay thế bằng tên người dùng GitHub của bạn
-            repo = "FLEXTFT"     # Thay thế bằng tên repository của bạn
-            api_url = f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
-
-            response = requests.get(api_url)
+            response = requests.get("https://raw.githubusercontent.com/jerrylemin/FLEXTFT/main/version.json")
             if response.status_code == 200:
-                release_info = response.json()
-                latest_version = release_info.get("tag_name", "Unknown")
-                current_version = self.app_version  # Sử dụng thuộc tính app_version
-
-                if latest_version != current_version:
-                    QMessageBox.information(
-                        self,
-                        "Update Available",
-                        f"New version available: {latest_version}\nPlease visit the GitHub Releases page to download the latest version."
+                latest_version = response.json()
+                current_version = "1.0.0"  # Phiên bản hiện tại
+                if current_version < latest_version["version"]:
+                    download_url = latest_version["url"]
+                    changelog = latest_version.get("changelog", "Không có ghi chú.")
+                    reply = QMessageBox.question(
+                        None,
+                        "Cập Nhật Mới",
+                        f"Có phiên bản mới: {latest_version['version']}\n\nGhi chú: {changelog}\n\nBạn có muốn cập nhật ngay?",
+                        QMessageBox.Yes | QMessageBox.No
                     )
+                    if reply == QMessageBox.Yes:
+                        download_and_replace(download_url)
                 else:
-                    QMessageBox.information(
-                        self,
-                        "Up to Date",
-                        "You are using the latest version."
-                    )
+                    QMessageBox.information(None, "Kiểm Tra Cập Nhật", "Bạn đang sử dụng phiên bản mới nhất.")
             else:
-                QMessageBox.warning(
-                    self,
-                    "Update Check Failed",
-                    f"Failed to check for updates. Status Code: {response.status_code}"
-                )
+                QMessageBox.warning(None, "Lỗi", "Không thể kiểm tra bản cập nhật.")
         except Exception as e:
-            QMessageBox.warning(
-                self,
-                "Error",
-                f"An error occurred while checking for updates: {e}"
-            )
+            QMessageBox.warning(None, "Lỗi", f"Đã xảy ra lỗi: {e}")
 
-
-    def download_update(self, url):
+    def download_and_replace(url):
         try:
-            response = requests.get(url, stream=True)
-            if response.status_code == 200:
-                with open("update.exe", "wb") as f:
-                    for chunk in response.iter_content(chunk_size=1024):
-                        if chunk:
-                            f.write(chunk)
-                QMessageBox.information(self, "Download Complete", "Update downloaded successfully. Please run the update executable to install the new version.")
-                # Tự động khởi chạy tệp update.exe và thoát ứng dụng hiện tại
-                os.startfile("update.exe")  # Chỉ dành cho Windows
-                QCoreApplication.quit()
-            else:
-                QMessageBox.warning(self, "Error", "Failed to download the update.")
+            new_file_path = os.path.join(os.getcwd(), "SieuPhamFlex_new.exe")
+            with requests.get(url, stream=True) as r:
+                r.raise_for_status()
+                with open(new_file_path, "wb") as f:
+                    for chunk in r.iter_content(chunk_size=8192):
+                        f.write(chunk)
+            QMessageBox.information(None, "Tải Về Thành Công", "Tệp cập nhật đã được tải về.\nỨng dụng sẽ khởi động lại để áp dụng cập nhật.")
+            restart_with_new_version(new_file_path)
         except Exception as e:
-            QMessageBox.warning(self, "Error", f"An error occurred during download: {e}")
+            QMessageBox.warning(None, "Lỗi", f"Không thể tải bản cập nhật: {e}")
+
+    def restart_with_new_version(new_file_path):
+        try:
+            old_file_path = sys.argv[0]
+            os.rename(old_file_path, old_file_path + ".old")
+            os.rename(new_file_path, old_file_path)
+            QMessageBox.information(None, "Cập Nhật", "Cập nhật thành công! Ứng dụng sẽ khởi động lại.")
+            os.execl(old_file_path, old_file_path, *sys.argv)
+        except Exception as e:
+            QMessageBox.warning(None, "Lỗi", f"Không thể áp dụng bản cập nhật: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
