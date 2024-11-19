@@ -7,18 +7,16 @@ from PyQt5.QtGui import QPixmap, QMouseEvent, QPainter, QColor
 from PyQt5.QtCore import Qt, QCoreApplication
 
 import unittest
-from collections import defaultdict
+from collections import defaultdict, Counter
 import itertools
 import json
 import os
 from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import random
 import requests
-
-VERSION = "1.0.0"
-REPO_OWNER = "jerrylemin"  # Thay bằng tên người dùng GitHub của bạn
-REPO_NAME = "FLEXTFT"     # Thay bằng tên repository của bạn
+import copy
 
 def resource_path(relative_path):
     """Tìm đường dẫn tới tệp dữ liệu, hoạt động cả khi chạy dưới dạng script hoặc exe."""
@@ -1114,7 +1112,7 @@ class TeamBuilderAI:
 
     def delete_favorite_team(self, index):
         """
-        Xoá đội hình yêu thích tại vị trí chỉ số `index`.
+        Xoá đội hình yêu thích tại vị trí chỉ số index.
         """
         if 0 <= index < len(self.favorite_teams):
             del self.favorite_teams[index]
@@ -1136,7 +1134,6 @@ class TeamBuilderAI:
             print(f"Saved {len(self.favorite_teams)} favorite teams to {self.favorites_file}.")
         except Exception as e:
             print(f"Error saving favorite teams: {e}")
-
 class TFTApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -1187,7 +1184,7 @@ class TFTApp(QWidget):
         self.traits_group_layout = QVBoxLayout()
         traits_container.setLayout(self.traits_group_layout)
         traits_scroll.setWidget(traits_container)
-        traits_scroll.setFixedHeight(700)  # Adjust height as needed
+        traits_scroll.setFixedHeight(850)  # Adjust height as needed
         traits_scroll.setStyleSheet("""
             QScrollArea {
                 background-color: #2F2F2F;
@@ -1433,7 +1430,6 @@ class TFTApp(QWidget):
         # Initial display updates
         self.update_team_display()
         self.update_traits_display()
-
 
     def populate_available_champions(self, sorted_champions=None, sort_by="Cost"):
         """Populate the available champions grid. If sorted_champions is provided, use it; otherwise, use the original list."""
@@ -1876,8 +1872,6 @@ class TFTApp(QWidget):
         except Exception as e:
             QMessageBox.warning(self, "Lỗi", f"Lỗi khi kiểm tra bản cập nhật: {e}")
 
-
-
     def download_update(self, url):
         """Download the update file and replace the current executable."""
         try:
@@ -1907,7 +1901,6 @@ class TFTApp(QWidget):
                 QMessageBox.warning(self, "Lỗi", "Không thể tải xuống tệp cập nhật.")
         except Exception as e:
             QMessageBox.warning(self, "Lỗi", f"Lỗi trong quá trình tải cập nhật: {e}")
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
